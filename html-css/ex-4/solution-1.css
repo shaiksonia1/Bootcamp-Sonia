@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #F8F4E1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    text-align: center;
+    width: 90vw;                /* 60% of the viewport width */
+    padding: 2rem;
+    background-color: #FFEEA9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movies {
+    padding: 1.5rem;            /* Increased padding for spacing between sections */
+}
+
+h1 {
+    font-size: 4rem;
+    color: #543310;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #543310;
+    white-space: nowrap;
+}
+
+
+p {
+    padding: 5px;
+    font-size: 1.5rem;
+    color: #AF8F6F;
+}
+
+img {
+    max-width: 60%;            
+    height: auto;               
+    border-radius: 5px;         
+    margin-top: 1rem;           
+}
+.moviesList{
+    display: flex;
+}
+

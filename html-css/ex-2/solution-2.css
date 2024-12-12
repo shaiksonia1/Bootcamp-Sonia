@@ -1,0 +1,80 @@
+body {
+    font-family: var(--font-family);
+    font-size: var(--body-font-size);
+    color: var(--text-color-light); 
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color-light); 
+}
+
+header {
+    color: white;
+    padding: var(--spacing);
+    text-align: center;
+    background-color: var(--primary-color, black);      /* Use default values for variables when they are not set (e.g., var(--primary-color, black)).*/
+
+}
+.container{
+    display: grid; 
+    grid-template-columns: 1fr 3fr 1fr; 
+    gap: 20px; 
+    padding: 20px;}
+h1 {
+    font-size: var(--header-font-size);
+}
+h2{
+    color: var(--secondary-color,black);     /* Use default values for variables when they are not set (e.g., var(--primary-color, black)).*/
+
+}
+
+main {
+    padding: var(--spacing);
+    font-size: var(--body-font-size);
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing);
+}
+
+th, td {
+    padding: var(--spacing);
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color,black);     /*Use default values for variables when they are not set (e.g., var(--primary-color, black)).    */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #dcdcdc;
+}
+
+a {
+    color: var(--link-color-light);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--primary-color,black);     /*Use default values for variables when they are not set (e.g., var(--primary-color, black)).    */
+    padding: var(--spacing);
+    text-align: center;
+    color: white;
+}

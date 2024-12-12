@@ -1,0 +1,63 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body and html setup */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #F8F4E1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    text-align: center;
+    width: 60vw;                /* This ensures content scales with the viewport */
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.moviesList {
+    margin-top: 2rem;
+}
+
+.movies {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem); /* Responsive font size for h1 */
+    color: #543310;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 3.5rem); /* Responsive font size for h2 */
+    color: #543310;
+    margin: 1rem 0;
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size for paragraphs */
+    color: #AF8F6F;
+}
+
+img {
+    width: 100%;            /* Make sure images are responsive */
+    height: auto;           /* Maintain aspect ratio */
+    border-radius: 8px;     /* Rounded corners for the images */
+    margin-top: 1rem;       /* Margin between image and text */
+}

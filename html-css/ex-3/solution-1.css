@@ -1,0 +1,23 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    flex-direction: column;   
+    height: 100vh;           
+    background-color: #f4f4f4;
+}
+
+header {
+    margin: 1rem;
+    text-align: center;
+    margin: 20px;
+}
+
+section p {
+    text-align: center;
+    margin: 20px;
+    line-height: 1.6;
+}

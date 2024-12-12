@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes for Exercise 5: CSS Grid Layout</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+    <header style="text-align: center;">
+        <h1>Project Notes for Exercise 5: CSS Grid Layout</h1>
+    </header>
+
+    <main style="padding: 20px;">
+        <section>
+            <h2>Overview of Exercise 5</h2>
+            <p>This exercise focuses on using CSS Grid Layout to create flexible and organized page layouts. The goal is to understand how to define grid areas, handle overflow, and utilize advanced features like <code>minmax()</code> to build responsive layouts. Additionally, this exercise explores how CSS Grid can be used for complex layouts like a golden layout with sidebars and main content.</p>
+        </section>
+
+        <section>
+            <h2>Solution Links</h2>
+            <ul>
+                <li><a href="./solution-1.html">Solution 1 </a></li>
+                <li><a href="./solution-2.html">Solution 2 </a></li>
+                <li><a href="./solution-3.html">Solution 3 </a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Thought Process</h2>
+            <p>Here's how I approached each level in Exercise 5:</p>
+            <ul>
+                <li><strong>Level 1</strong> - The first step was creating a basic golden layout with a header, two sidebars, and main content. I used CSS Grid's <code>grid-template-areas</code> to define the layout. This helped organize the content into distinct sections, making the page visually appealing and well-structured.</li>
+                <li><strong>Level 2</strong> - In this level, I focused on handling overflow content in the main content area. I used the <code>overflow</code> property to ensure that extra content could be scrolled or hidden, without affecting the layout. Additionally, I adjusted the grid properties to ensure the layout remained intact across different screen sizes.</li>
+                <li><strong>Level 3</strong> - For the third level, I explored advanced CSS Grid techniques like using <code>minmax()</code> for flexible grid rows and columns. This allowed for dynamic sizing and a more responsive design. I also named the grid areas dynamically, adjusting the layout for smaller screen sizes and ensuring that the content was accessible on all devices.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Challenges Faced</h2>
+            <p>During the development of this project, I faced a few challenges:</p>
+            <ul>
+                <li>Initially, I had trouble positioning the grid areas precisely, especially when adjusting the layout for smaller screens. It took some time to get the correct grid-template settings.</li>
+                <li>Handling overflow content was tricky at first. I had to experiment with different values for the <code>overflow</code> property to decide when to scroll or hide content.</li>
+                <li>Using <code>minmax()</code> to create flexible grid areas posed a challenge when trying to ensure the layout adjusted properly across various screen sizes, especially when the content's size changed dynamically.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Key Learnings</h2>
+            <p>This exercise helped me deepen my understanding of CSS Grid Layout and how to create complex layouts with flexibility. I learned how to:</p>
+            <ul>
+                <li>Use <code>grid-template-areas</code> to define grid sections.</li>
+                <li>Handle overflow content using the <code>overflow</code> property.</li>
+                <li>Apply <code>minmax()</code> to create flexible grid sizes that adjust dynamically to content.</li>
+                <li>Adjust the layout for different screen sizes without breaking the structure.</li>
+            </ul>
+            <p>These techniques are key to creating responsive, organized, and scalable layouts in modern web design.</p>
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; padding: 10px 0; bottom: 0; width: 100%;">
+        <p>Contact: example@email.com</p>
+    </footer>
+
+</body>
+</html>

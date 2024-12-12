@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #070F2B;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "left-sidebar main-content right-sidebar"
+        "footer footer footer";
+    grid-template-columns: minmax(250px, 1fr) minmax(300px, 3fr) minmax(250px, 1fr); 
+    grid-template-rows: auto minmax(400px, 1fr) auto; 
+    gap: 20px;
+    height: 100%;
+}
+
+.header {
+    grid-area: header;
+    background-color: #1B1A55;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+h2{
+    font-size: 2.1rem;
+    color: #FBFADA;
+    text-align: center;
+}
+h3{
+    color: #F3F8FF;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+}
+p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #EEF0E5;
+}
+.left-sidebar {
+    grid-area: left-sidebar;
+    background-color: #535C91; 
+    padding: 13px;
+    overflow-y: auto; 
+}
+
+.right-sidebar {
+    grid-area: right-sidebar;
+    background-color: #535C91;
+    padding: 13px;
+    overflow-y: auto; 
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: #535C91;
+    padding: 20px;
+    overflow-y: auto; 
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #070F2B;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+ul{
+    list-style: none;
+    color: #EEF0E5;
+
+}
+li a{
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #F3F8FF;
+    text-align: center;
+}
+a:hover{
+    color: #070F2B;
+}
+img {
+    width: 40%;          
+    height: auto;        
+    display: block;      
+    margin: 0 auto;   
+    padding: 1rem;   
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas: 
+            "header"
+            "left-sidebar"
+            "main-content"
+
+            "right-sidebar"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto; 
+    }
+
+    .left-sidebar, .right-sidebar {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .main-content {
+        padding: 5px;
+    }
+
+    .header, .footer {
+        text-align: center;
+    }
+
+    .movies img {
+        max-width: 60%; 
+        height: auto;
+    }
+}
