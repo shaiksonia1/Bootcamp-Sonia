@@ -1,11 +1,9 @@
-/* Reset styles for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General body and html setup */
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
@@ -18,46 +16,72 @@ body, html {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    padding: 1rem;
+    flex-wrap: wrap;
 }
 
 .content {
     text-align: center;
-    width: 60vw;                /* This ensures content scales with the viewport */
+    width: clamp(320px, 90vw, 1200px);
     padding: 2rem;
-    background-color: #f4f4f4;
+    height: auto;
     border-radius: 10px;
+    background-color: #FFEEA9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.moviesList {
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .movies {
     padding: 1.5rem;
-    margin: 1rem 0;
+    margin-bottom: 1.5rem;
     border-bottom: 1px solid #ddd;
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 4.5rem); /* Responsive font size for h1 */
+    font-size: clamp(2rem, 6vw, 4rem);
     color: #543310;
 }
 
 h2 {
-    font-size: clamp(1.8rem, 4vw, 3.5rem); /* Responsive font size for h2 */
+    font-size: clamp(1.5rem, 4vw, 2rem);
     color: #543310;
-    margin: 1rem 0;
+    white-space: nowrap;
 }
 
 p {
-    font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size for paragraphs */
+    padding: 5px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     color: #AF8F6F;
+    line-height: 1.6;
 }
 
 img {
-    width: 100%;            /* Make sure images are responsive */
-    height: auto;           /* Maintain aspect ratio */
-    border-radius: 8px;     /* Rounded corners for the images */
-    margin-top: 1rem;       /* Margin between image and text */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.moviesList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.movies {
+    flex: 1 1 calc(33% - 1rem);
+    min-width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: min(100%, 400px);
+    height: auto;
 }
