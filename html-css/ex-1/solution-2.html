@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1: Solution 2</title>
+    <style>
+      /* General body styling */
+      body {
+        background-color: #ffffffb3;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .layout-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      nav {
+        width: 20%;
+      }
+
+      nav h2 {
+        text-align: center;
+      }
+
+      main {
+        flex: 1;
+        padding: 0 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table, th, td {
+        border: 1px solid #ccc;
+      }
+
+      th, td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f4f4f4;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      ul li a:hover {
+        color: #007bff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Golden Layout - Solution 2</h1>
+    </header>
+
+    <div class="layout-container">
+      <!-- Left Sidebar Navigation -->
+      <nav>
+        <h2>Links for Car Models:</h2>
+        <ul>
+          <li><a href="#">Toyota</a></li>
+          <li><a href="#">Honda</a></li>
+          <li><a href="#">Ford</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content Area -->
+      <main>
+        <h2 style="text-align: center;">Cars List</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Toyota Camry</td>
+            <td>
+              <p><strong>Specifications:</strong></p>
+              <p>The Toyota Camry is a reliable midsize sedan known for its fuel efficiency and comfortable ride. It comes with a 2.5-liter 4-cylinder engine, providing a smooth driving experience.</p>
+            </td>
+            <td>₹5000000</td>
+          </tr>
+          <tr>
+            <td>Honda Civic</td>
+            <td>
+              <p><strong>Specifications:</strong></p>
+              <p>The Honda Civic is a compact car with a sleek design and sporty performance. It features a 2.0-liter 4-cylinder engine, offering a balance of power and fuel efficiency.</p>
+            </td>
+            <td>₹5000000</td>
+          </tr>
+          <tr>
+            <td>Ford Mustang</td>
+            <td>
+              <p><strong>Specifications:</strong></p>
+              <p>The Ford Mustang is an iconic American muscle car that combines aggressive styling with powerful engine options. The base model comes with a 2.3-liter turbocharged 4-cylinder engine.</p>
+            </td>
+            <td>₹5000000</td>
+          </tr>
+        </table>
+      </main>
+
+      <!-- Right Sidebar Navigation -->
+      <nav>
+        <h2>Explore More:</h2>
+        <ul>
+          <li><a href="#">Subaru</a></li>
+          <li><a href="#">Hyundai</a></li>
+          <li><a href="#">Mercedes-Benz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
