@@ -1,0 +1,8 @@
+/* variables.css */
+:root {
+    --primary-color: #3498db;  /* Primary color */
+    --secondary-color: #2ecc71; /* Secondary color */
+    --header-font-size: 2rem;  /* Font size for headers */
+    --body-font-size: 1rem;    /* Font size for body text */
+    --spacing: 20px;           /* Default spacing for margins */
+}
