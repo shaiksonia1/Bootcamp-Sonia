@@ -19,7 +19,7 @@ section{
 /* Gradient Theme Section */
 .gradient-section h1 {
     background: linear-gradient(#660708, #ba181b,#e5383b);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     color: transparent;
     font-size: 3rem;
     margin-bottom: 20px;
