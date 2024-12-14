@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Dark and Light Themes with Overlaid Text">
+    <title>Dark and Light Themes</title>
+    <link rel="stylesheet" href="./solution-2-2.css">
+    <link rel="stylesheet" href="./dark-theme.css" id="theme-stylesheet" disabled>
+    <link rel="stylesheet" href="./light-theme.css" id="light-stylesheet">
+</head>
+<body>
+
+
+
+<section class="image-container">
+    <img src="https://images.pexels.com/photos/1743371/pexels-photo-1743371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sample Image">
+    <div class="overlay-text">Exercise 2: Basics of Colors(Level-2)    </div>
+</section>
+<div class="theme-toggle">
+    <button onclick="toggleTheme()">Switch Theme</button>
+</div>
+
+
+
+<h1>HSL Color Swatches - Saturation and Lightness Variations</h1>
+<div class="color-swatch-container">
+    <!-- HSL Variations: Hue = 200 (blue), Saturation and Lightness vary -->
+    <div class="color-swatch" style="background-color: hsl(200, 100%, 50%);">
+        <p>hsl(200, 100%, 50%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(200, 80%, 50%);">
+        <p>hsl(200, 80%, 50%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(200, 60%, 50%);">
+        <p>hsl(200, 60%, 50%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(200, 40%, 50%);">
+        <p>hsl(200, 40%, 50%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(200, 100%, 30%);">
+        <p>hsl(200, 100%, 30%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(200, 100%, 70%);">
+        <p>hsl(200, 100%, 70%)</p>
+    </div>
+
+    <!-- More HSL Variations: Hue = 120 (green), Saturation and Lightness vary -->
+    <div class="color-swatch" style="background-color: hsl(120, 100%, 50%);">
+        <p>hsl(120, 100%, 50%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(120, 80%, 50%);">
+        <p>hsl(120, 80%, 50%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(120, 60%, 50%);">
+        <p>hsl(120, 60%, 50%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(120, 40%, 50%);">
+        <p>hsl(120, 40%, 50%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(120, 100%, 30%);">
+        <p>hsl(120, 100%, 30%)</p>
+    </div>
+    <div class="color-swatch" style="background-color: hsl(120, 100%, 70%);">
+        <p>hsl(120, 100%, 70%)</p>
+    </div>
+</div>
+
+
+<section>
+
+    <div class="paragraph">
+        <h2>What I have implemented</h2>
+
+        <p>I created a webpage that allows users to toggle between a dark and light theme. In the HTML, I included meta tags for the page's character set, viewport settings, and description. I added links to the CSS files for both themes and used a JavaScript function to switch between them when the user clicks the toggle button.</p>
+            <p>In the CSS, I defined two themes—light and dark—using CSS variables for colors like primary, secondary, background, and text. The light theme uses lighter background and darker text, while the dark theme uses darker background and lighter text. I styled the overlay text on the image to be centered and readable on both themes using absolute positioning and transform.</p>
+            <p>I also demonstrated HSL color variations by adjusting saturation and lightness, creating a range of colors. To enhance the typography, I used custom fonts with @font-face to allow medium and bold weights. For layout, I used flexbox to create a responsive card design with padding, rounded corners, and subtle shadows. The buttons have transition effects on hover to fit the theme style.</p>
+
+    </div>
+</section>
+
+
+<script>
+    function toggleTheme() {
+        const darkStylesheet = document.getElementById('theme-stylesheet');
+        const lightStylesheet = document.getElementById('light-stylesheet');
+        
+        if (darkStylesheet.disabled) {
+            darkStylesheet.disabled = false;
+            lightStylesheet.disabled = true;
+        } else {
+            darkStylesheet.disabled = true;
+            lightStylesheet.disabled = false;
+        }
+    }
+</script>
+
+</body>
+</html>

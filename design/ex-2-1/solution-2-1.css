@@ -1,0 +1,32 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 900; /* Bold */
+}
+
+h3 {
+    font-family: 'Courier New', monospace;
+    font-weight: 900; /* Medium weight */
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+.warning {
+    font-weight: 300; /* Light */
+    color: red;
+    font-style: italic;
+}
+.code{
+    background-color: black;
+}
+
+/* Add additional styles as needed */

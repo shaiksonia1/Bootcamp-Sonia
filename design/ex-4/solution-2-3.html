@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images with Lazy Loading</title>
+  <link rel="stylesheet" href="./solution-3-3.css">
+</head>
+<body>
+  <h1>Responsive Image Example</h1>
+
+  <!-- Picture element with responsive and lazy loading -->
+  <picture>
+    <!-- Source for devices with larger screens (high resolution) -->
+    <source srcset="./img-1.jpg" media="(min-width: 800px)" type="image/jpeg">
+    
+    <!-- Source for devices with lower screens (medium resolution) -->
+    <source srcset="./medium-resolution.jpg" media="(min-width: 500px)" type="image/jpeg">
+    
+    <!-- Default image for small devices or default fallback -->
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="A beautiful landscape" loading="lazy" width="100%" height="auto">
+  </picture>
+
+  <div class="content">
+    <p>Scroll down to see the effect of lazy loading on images.</p>
+    <img src="./img-1.jpg" alt="A beautiful landscape" loading="lazy" width="100%" height="auto">
+
+  </div>
+  
+</body>
+</html>

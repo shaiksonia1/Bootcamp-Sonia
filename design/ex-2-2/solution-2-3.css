@@ -1,0 +1,142 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #161a1d;
+    color: #b1a7a6;
+    padding: 20px;
+    text-align: left;
+    margin: 3rem;
+}
+section{
+    padding: 1rem;
+}
+/* Gradient Theme Section */
+.gradient-section h1 {
+    background: linear-gradient(#660708, #ba181b,#e5383b);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.gradient-stops {
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    padding: 4rem;
+    background: linear-gradient(45deg, #ff6347 20%, #40e0d0 50%, #ff6347 80%);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+ p{
+width: 100%;
+line-height: 2.4rem;
+font-size: 1.5rem;
+padding-bottom: 1rem;
+}
+.radial-gradient-btn {
+    background: radial-gradient(circle, #0466c8, #001233);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.radial-gradient-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Color Palette Section */
+.palette-section h2 {
+    color: #c9184a;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.color-palette-btn {
+    background: #ff4d6d;  /* Base color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.color-palette-btn:hover {
+    background: #590d22; /* Darker shade */
+}
+
+/* Contrast Demonstration Section */
+.contrast-section h2 {
+    color: #c9184a;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contrast-box {
+    margin: 10px 0;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.low-contrast {
+    background-color: #f4f4f4;
+    color: #bbb;
+    border: 2px solid #ccc;
+}
+
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #ff7e5f;
+}
+
+/* Responsive Design and Color Palette */
+@media (max-width: 768px) {
+    .palette-section h2 {
+        font-size: 2rem;
+    }
+
+    .color-palette-btn {
+        background: #ff8fa3; /* Lighter tint */
+        
+    }
+    body{
+        background-color: #1b263b;
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .gradient-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .radial-gradient-btn {
+        padding: 12px 25px;
+    }
+
+    .color-palette-btn {
+        font-size: 1rem;
+    }
+
+    .contrast-section h2 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #000022;
+    color: #fbf5f3;
+}
+
+h2 {
+    color: #e28413;
+    text-align: center;
+
+}
+
+
+
+button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e28413;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button svg {
+    margin-right: 8px;
+    fill: white;
+    transition: fill 0.3s;
+}
+
+button:hover {
+    background-color: #FF5722;
+}
+
+.download-btn:hover svg,
+.upload-btn:hover svg {
+    fill: #FF5722;
+}
+
+/* Grid of Icons */
+.grid-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 2rem;
+}
+
+.icon-box {
+    padding: 20px;
+    border: 1px solid #e28413;
+    border-radius: 8px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+    border-color: #FF5722;
+}
+
+.icon-box i {
+    font-size: 50px;
+    color: #e28413;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon-box svg {
+    width: 50px;
+    height: 50px;
+    fill: #e28413;
+    transition: fill 0.3s, transform 0.3s;
+}
+
+.icon-box i:hover,
+.icon-box svg:hover {
+    color: #FF5722;
+    fill: #FF5722;
+    transform: scale(1.2);
+}
+
+
+
+p{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+    text-align: left;
+    line-height: 1.8;
+    font-size: 1.4rem;
+}

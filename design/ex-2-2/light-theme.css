@@ -1,0 +1,29 @@
+/* Light Theme */
+body {
+    --primary: #008CBA;
+    --secondary: #ff9800;
+    --background: #f0f0f0;
+    --text-color: #333;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--text-color);
+}

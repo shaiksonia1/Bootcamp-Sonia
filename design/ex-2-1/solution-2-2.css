@@ -1,0 +1,89 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #ffffffb3;
+    border-radius: 1rem;
+}
+
+/* Headers */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    
+}
+
+/* Drop cap */
+.variableFont::first-letter {
+    font-size: 3rem;
+    color: #f06;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Text Shadows */
+p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 7600;  /* Custom weight */
+    font-stretch: 150%;  /* Custom width */
+}
+
+/* Large Headings with Image Overlay */
+h1 {
+    font-size: 4em;
+    background-image: url('https://images.pexels.com/photos/126271/pexels-photo-126271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Monospace for code */
+code {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2em;
+    background-color: #ffffffb3;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Layout for the page */
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+footer a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

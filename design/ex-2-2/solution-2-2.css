@@ -1,0 +1,88 @@
+/* Define common CSS variables */
+:root {
+    --primary: #ff6347;
+    --secondary: #4caf50;
+    --background: #ffffff;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+.theme-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+}
+.paragraph{
+    margin: 6rem;
+    width: 80%;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+}
+
+.color-swatch-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.color-swatch {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #004494;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
