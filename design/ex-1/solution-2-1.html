@@ -7,7 +7,7 @@
 	<link rel="stylesheet" media="screen" href="style.css?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
     <!-- <link rel="stylesheet" href="./solution-1-1.css"> -->
-    <link rel="stylesheet" href="./solution-2-1.js">
+    <link rel="stylesheet" href="./solution-2-1.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dave Shea">
@@ -74,21 +74,6 @@
 			<p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
 		</div>
 
-		 <div class="code">
-			<code>
-				const themeToggle = document.getElementById('theme-toggle');
-		const root = document.documentElement;
-		
-		themeToggle.addEventListener('click', () => {
-			if (root.classList.contains('light')) {
-				root.classList.replace('light', 'dark');
-			} else {
-				root.classList.add('light');
-				root.classList.remove('dark');
-			}
-		});
-		
-			</code>
 		 </div>
 		<div class="preamble" id="zen-preamble" role="article">
 			<h3>The Road to Enlightenment</h3>
@@ -117,6 +102,21 @@
 			<p>Why participate? For recognition, inspiration, and a resource we can all refer to showing people how amazing <abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal parts inspiration for those working on the web today, learning tool for those who will be tomorrow, and gallery of future techniques we can all look forward to.</p>
 		</div>
 
+		<div class="code">
+			<code>
+				const themeToggle = document.getElementById('theme-toggle');
+		const root = document.documentElement;
+		
+		themeToggle.addEventListener('click', () => {
+			if (root.classList.contains('light')) {
+				root.classList.replace('light', 'dark');
+			} else {
+				root.classList.add('light');
+				root.classList.remove('dark');
+			}
+		});
+		
+			</code>
 
 
 		<footer>
