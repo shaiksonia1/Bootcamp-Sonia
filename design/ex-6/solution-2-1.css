@@ -1,0 +1,90 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container for all content */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #2e3a59;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* Main content */
+  main {
+    padding: 40px 0;
+  }
+  
+  /* Website review section */
+  .website-review {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .website-review h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .website-review p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .website-review ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .website-review ul li {
+    margin-bottom: 10px;
+  }
+  
+  .website-review img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2e3a59;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1em;
+  }
+  
