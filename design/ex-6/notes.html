@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Notes and Redesigns</title>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Section Specific Styles */
+        section#level-1 ul li {
+            font-size: 16px;
+        }
+
+        section#level-2 ul li {
+            font-size: 16px;
+        }
+
+        section#level-3 ul li {
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Design Notes and Redesigns</h1>
+    </header>
+
+    <main>
+        <section id="level-1">
+            <h2>Level 1: Annotating Problems</h2>
+
+            <h3>Indian Government Press Releases</h3>
+            <p>Website: Indian Government Press Releases</p>
+            <p>Issues Observed:</p>
+            <ul>
+                <li><strong>Cluttered Layout:</strong> The page is overcrowded with content, making it difficult for users to focus on important information. The headlines are not prominent enough to stand out from the rest of the text.</li>
+                <li><strong>Bad Contrast:</strong> Text and background colors are not well contrasted, making the text hard to read, especially for users with visual impairments.</li>
+                <li><strong>Lack of Search Functionality:</strong> There is no intuitive way to search for press releases, making it cumbersome for users to find specific releases.</li>
+            </ul>
+
+            <p>Suggested Improvements:</p>
+            <ul>
+                <li>Consider adopting a clean, minimalist design like <a href="https://www.state.gov/">US Department of State</a>, which has a structured and easy-to-navigate interface with a clear distinction between news releases and other sections.</li>
+                <li>Implement a better contrast ratio, following the Web Content Accessibility Guidelines (WCAG).</li>
+                <li>Incorporate a search bar for users to quickly find press releases by date, title, or category.</li>
+            </ul>
+
+            <h3>IITM CSE Faculty Site</h3>
+            <p>Website: IITM CSE Faculty Site</p>
+            <p>Issues Observed:</p>
+            <ul>
+                <li><strong>Navigation Issues:</strong> Navigation between faculty pages is not smooth. Users have to go back to the main faculty page each time they want to see another member's profile.</li>
+                <li><strong>Minimal Visual Appeal:</strong> The website uses very basic fonts and has a lack of engaging design elements.</li>
+                <li><strong>Responsive Issues:</strong> The site does not display well on mobile devices, with overlapping content and misaligned sections.</li>
+            </ul>
+
+            <p>Suggested Improvements:</p>
+            <ul>
+                <li>Redesign with a more modern layout, similar to <a href="https://www.cs.cmu.edu/~faculty/">CMU's Computer Science Faculty Page</a>, which has a clean, visually appealing design and intuitive navigation.</li>
+                <li>Make use of a responsive design, allowing for proper scaling and arrangement on mobile screens.</li>
+            </ul>
+
+            <h3>IIT B Talk</h3>
+            <p>Website: IIT B Talk</p>
+            <p>Issues Observed:</p>
+            <ul>
+                <li><strong>Text Overload:</strong> The site has too much information crammed together in a single page. It’s overwhelming and hard for users to quickly absorb key details.</li>
+                <li><strong>Poorly Structured Information:</strong> There is no clear hierarchy of content (e.g., important talks vs. archived talks), which makes navigation difficult.</li>
+            </ul>
+
+            <p>Suggested Improvements:</p>
+            <ul>
+                <li>Adopt a grid-based design, like <a href="https://ted.com/talks">TED Talks</a>, where talks are neatly organized by categories, topics, and speaker names, with easy navigation between them.</li>
+                <li>Break content into smaller sections with clear headings and a prominent "Featured Talks" section.</li>
+            </ul>
+
+            <h3>Indian Railways Website</h3>
+            <p>Website: Indian Railways</p>
+            <p>Issues Observed:</p>
+            <ul>
+                <li><strong>Poor Visual Hierarchy:</strong> The website is overloaded with text, and the most important elements (such as booking and train status) are buried under a lot of irrelevant information.</li>
+                <li><strong>Slow Loading:</strong> The website contains a lot of heavy images and scripts, which slow down the load time significantly.</li>
+            </ul>
+
+            <p>Suggested Improvements:</p>
+            <ul>
+                <li>Adopt a cleaner design like <a href="https://www.amtrak.com">Amtrak's website</a>, where important features like booking and train schedules are easy to find and quick to access.</li>
+                <li>Optimize images and scripts to improve page load speed.</li>
+            </ul>
+
+        </section>
+
+        <section id="level-2">
+            <h2>Level 2: Comparing Two Websites</h2>
+
+            <h3>Flipkart Mobile Phones Page vs Amazon Mobile Phones Page</h3>
+            <p>Flipkart Website: <a href="https://www.flipkart.com">Flipkart</a></p>
+            <p>Amazon Website: <a href="https://www.amazon.in">Amazon</a></p>
+            <p>Design Comparison:</p>
+            <ul>
+                <li><strong>Flipkart:</strong> Flipkart has a grid layout with a left sidebar, featuring a large number of filters, but this could be overwhelming. The search bar is prominent, and the page feels cluttered in comparison to Amazon's cleaner interface.</li>
+                <li><strong>Amazon:</strong> Amazon uses a top navigation bar, which simplifies the structure. Filters are more minimal and accessible, allowing for a better user experience. The design feels more refined, with consistent spacing between elements.</li>
+            </ul>
+
+            <p>Information Structure Comparison:</p>
+            <ul>
+                <li><strong>Flipkart:</strong> Flipkart uses a category-based filtering system, but there’s no clear distinction between different categories, making it harder for users to make a decision.</li>
+                <li><strong>Amazon:</strong> Amazon uses dynamic filtering and allows users to quickly narrow down options based on multiple parameters, including brand, price, customer ratings, and more.</li>
+            </ul>
+
+            <p>Suggested Improvements:</p>
+            <ul>
+                <li>Flipkart could consider Amazon's simpler, more focused design to avoid overwhelming users with excessive information.</li>
+                <li>Both sites could improve user decision-making by implementing clearer product descriptions, comparison options, and customer reviews upfront.</li>
+            </ul>
+
+            <h3>State of Telangana vs State of Michigan</h3>
+            <p>State of Telangana Website: <a href="https://www.telangana.gov.in">Telangana</a></p>
+            <p>State of Michigan Website: <a href="https://www.michigan.gov/som">Michigan</a></p>
+            <p>Design Comparison:</p>
+            <ul>
+                <li><strong>State of Telangana:</strong> The design feels outdated, with a dense, text-heavy layout. Important sections are not easily distinguishable, which makes the user experience less intuitive.</li>
+                <li><strong>State of Michigan:</strong> Michigan’s site uses a modern design with large icons and a more accessible layout. The information is structured clearly with a top navigation bar and organized categories.</li>
+            </ul>
+
+            <p>Suggested Improvements:</p>
+            <ul>
+                <li>Telangana could adopt Michigan's layout by using larger, visually distinct icons, and a more minimalist approach for better accessibility and navigation.</li>
+            </ul>
+        </section>
+
+        <section id="level-3">
+            <h2>Level 3: Redesign Examples</h2>
+
+            <h3>Redesign of IITM CSE Faculty Site</h3>
+            <ul>
+                <li>Implemented a modern, responsive layout with card-based design for each faculty member.</li>
+                <li>Ensured clean navigation by organizing the faculty members into departments and providing a search bar for easy filtering.</li>
+            </ul>
+
+            <h3>Redesign of Indian Railways Website</h3>
+            <ul>
+                <li>Created a minimalist homepage with a focus on train bookings, schedules, and status.</li>
+                <li>Optimized images and content for faster load times, especially on mobile devices.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
