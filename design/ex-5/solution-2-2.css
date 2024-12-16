@@ -1,0 +1,230 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Arial', sans-serif; */
+    color: #333;
+    line-height: 1.6;
+    /* background-color: #370617; */
+}
+/* Navigation Bar */
+.navbar ul {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f1faee;
+}
+
+.navbar li {
+    margin: 0 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar i {
+    margin-right: 8px;
+    color: #e28413;
+    transition: color 0.3s;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/29736418/pexels-photo-29736418/free-photo-of-stylish-woman-in-red-suit-with-hat-on-bold-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    /* padding: 20px; */
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.hero h1 {
+    font-size: 12rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+.image-1 img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+/* Style for the section */
+.section-2 {
+    padding: 40px 20px; /* Add some padding to the section */
+    background-color: #ffc6ff; /* Light background color */
+}
+
+/* Wrapper that holds the text and image */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    gap: 2rem; /* Space between text and image */
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+
+/* Styling for the text container */
+.text-container {
+    flex: 1; /* Allow the text to take available space */
+    max-width: 50%; /* Limit max width */
+}
+
+/* Styling for the image container */
+.image-container {
+    flex: 1; /* Allow image to take available space */
+    max-width: 50%; /* Limit max width */
+}
+
+/* Image styling */
+.image-container img {
+    width: 80%; /* Make image responsive */
+    border-radius: 10px; /* Optional: rounded corners */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Ensure text is readable */
+.text-container p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 2rem;
+
+    color: #333;
+}
+
+.text-container h3{
+    font-size: 5rem;
+    color: #f72585;
+    padding: 2rem;
+}
+
+/* Featured Articles Grid */
+.featured-articles {
+    padding: 50px 20px;
+    /* background-color: #ff8fab; */
+    margin-top: -50px; /* To create overlap with the hero section */
+    text-align: center;
+}
+
+.featured-articles h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #005f73;
+}
+.content{
+    margin: 4rem;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 2rem;
+    border-bottom: 1px solid #555;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    /* background-color: #f9f9f9; */
+    /* border-radius: 8px; */
+    padding: 20px;
+    border: 1px #555 solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.grid-item img {
+    width: 100%;
+    /* border-radius: 8px; */
+    margin-bottom: 15px;
+}
+
+.grid-item h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #005f73;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .featured-articles h2 {
+        font-size: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

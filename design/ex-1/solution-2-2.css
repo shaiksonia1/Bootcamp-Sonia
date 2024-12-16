@@ -32,6 +32,7 @@ p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: 7600;  /* Custom weight */
     font-stretch: 150%;  /* Custom width */
+    font-size: 1.4rem;
 }
 
 /* Large Headings with Image Overlay */
