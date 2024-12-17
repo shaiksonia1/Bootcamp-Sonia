@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges and Improvements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2E3A59;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Challenges and Improvements</h1>
+
+    <div class="section">
+        <h2>Challenges Faced</h2>
+        <ul>
+            <li><strong>Initial Setup Complexity:</strong> Setting up TypeScript, ESLint, and Prettier together was challenging due to configuration conflicts and compatibility issues.</li>
+            <li><strong>Module Aliasing:</strong> Configuring <code>baseUrl</code> and <code>paths</code> for cleaner imports required multiple attempts to get the correct structure.</li>
+            <li><strong>Strict Type Checking:</strong> Adapting to strict type checks in TypeScript revealed areas in the codebase where types were unclear or missing.</li>
+            <li><strong>ESLint and Prettier Integration:</strong> Combining ESLint rules with Prettier formatting occasionally caused conflicting rules that needed manual adjustments.</li>
+            <li><strong>Build Output Validation:</strong> Ensuring the compiled files in the <code>dist</code> folder worked as expected required careful verification and debugging.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Improvements Made</h2>
+        <ul>
+            <li><strong>Streamlined Configuration:</strong> Created a clear and concise <code>tsconfig.json</code> file with well-documented options for ease of use and scalability.</li>
+            <li><strong>Enhanced Module Aliasing:</strong> Successfully implemented module aliasing for cleaner and more maintainable imports using <code>@utils</code> and <code>@services</code>.</li>
+            <li><strong>Automated Code Formatting:</strong> Integrated Prettier with ESLint to enforce consistent code formatting without conflicts.</li>
+            <li><strong>Improved Error Handling:</strong> Used TypeScript's strict mode to identify and fix potential issues early in the development process.</li>
+            <li><strong>Clear Build Workflow:</strong> Ensured a seamless build process with a well-organized folder structure and clear separation between source and output files.</li>
+        </ul>
+    </div>
+</body>
+</html>

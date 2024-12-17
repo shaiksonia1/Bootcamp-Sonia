@@ -1,0 +1,7 @@
+logging:
+  level: info  # Can be 'debug', 'info', 'warn', 'error'
+
+commands:
+  - name: sin
+  - name: cos
+  - name: tan
