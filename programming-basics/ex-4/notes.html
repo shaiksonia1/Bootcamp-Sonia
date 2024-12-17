@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4: Debugging with Debug</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2E3A59;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .challenges, .improvements {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #17A2B8;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise 4: Debugging with <code>debug</code></h1>
+
+    <div class="section">
+        <h2>Level 1</h2>
+        <p><strong>Problem Description:</strong></p>
+        <ul>
+            <li>Install the <code>debug</code> package and set up a debugging namespace.</li>
+            <li>Log messages using the <code>debug</code> function in a single module.</li>
+        </ul>
+        <p><strong>Exit Criteria:</strong> Debug messages are displayed when the <code>DEBUG</code> environment variable is set.</p>
+    </div>
+
+    <div class="section">
+        <h2>Level 2</h2>
+        <p><strong>Problem Description:</strong></p>
+        <ul>
+            <li>Extend the program by adding multiple modules with unique debug namespaces.</li>
+            <li>Use environment variables to selectively enable debugging for specific modules.</li>
+        </ul>
+        <p><strong>Exit Criteria:</strong> Debugging can be turned on or off for individual modules.</p>
+    </div>
+
+    <div class="section">
+        <h2>Level 3</h2>
+        <p><strong>Problem Description:</strong></p>
+        <ul>
+            <li>Combine <code>debug</code> with <code>winston</code> for structured logging and debugging.</li>
+            <li>Enhance the compute program to make it interactive.</li>
+            <li>Use both tools to log and debug complex program scenarios.</li>
+        </ul>
+        <p><strong>Exit Criteria:</strong> Debugging and logging work together seamlessly in the program.</p>
+    </div>
+
+    <div class="challenges">
+        <h2>Challenges I Faced</h2>
+        <ul>
+            <li>Understanding how to use namespaces effectively with <code>debug</code>.</li>
+            <li>Integrating <code>debug</code> and <code>winston</code> for consistent logging.</li>
+            <li>Managing environment variables for selective debugging.</li>
+        </ul>
+    </div>
+
+    <div class="improvements">
+        <h2>Improvements</h2>
+        <ul>
+            <li>Documented the setup of <code>debug</code> and <code>winston</code> integration for future reference.</li>
+            <li>Created clearer debug namespaces to identify specific modules.</li>
+            <li>Improved program interactivity for better debugging scenarios.</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Project Setup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2E3A59;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .problem-level {
+            color: #007BFF;
+            font-weight: bold;
+        }
+        pre {
+            background-color: #F4F4F4;
+            padding: 10px;
+            border: 1px solid #DDD;
+            overflow-x: auto;
+        }
+        .improvements, .challenges {
+            background-color: #F9F9F9;
+            padding: 10px;
+            border-left: 4px solid #28A745;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Node.js Project Setup Documentation</h1>
+
+    <!-- Level 1 -->
+    <div class="section">
+        <h2 class="problem-level">Level 1</h2>
+        <p><strong>Problem Description:</strong></p>
+        <ul>
+            <li>Initialize a new Node.js project using <code>npm init</code>.</li>
+            <li>Add a <code>start</code> script to run a basic <code>index.js</code> file.</li>
+            <li>Add a <code>dev</code> script to run the same file with debugging output (<code>DEBUG=* node index.js</code>).</li>
+        </ul>
+        <p><strong>Exit Criteria:</strong></p>
+        <ul>
+            <li>Running <code>npm start</code> executes <code>index.js</code>.</li>
+            <li>Running <code>npm run dev</code> shows debugging output.</li>
+        </ul>
+    </div>
+
+    <!-- Level 2 -->
+    <div class="section">
+        <h2 class="problem-level">Level 2</h2>
+        <p><strong>Problem Description:</strong></p>
+        <ul>
+            <li>Install the <code>chalk</code> package and use it in <code>index.js</code> to style console outputs.</li>
+            <li>Add <code>nodemon</code> as a dev dependency to automatically restart the program during development.</li>
+        </ul>
+        <p><strong>Exit Criteria:</strong></p>
+        <ul>
+            <li><code>index.js</code> outputs styled messages using <code>chalk</code>.</li>
+            <li>Changes to <code>index.js</code> automatically restart when using <code>nodemon</code>.</li>
+        </ul>
+    </div>
+
+    <!-- Level 3 -->
+    <div class="section">
+        <h2 class="problem-level">Level 3</h2>
+        <p><strong>Problem Description:</strong></p>
+        <ul>
+            <li>Add a <code>prestart</code> script to ensure <code>node_modules</code> is available before running the program.</li>
+            <li>Test by removing <code>node_modules</code> and ensuring <code>npm start</code> reinstalls dependencies successfully.</li>
+        </ul>
+        <p><strong>Exit Criteria:</strong></p>
+        <ul>
+            <li>The <code>prestart</code> script checks for <code>node_modules</code> and reinstalls dependencies if missing.</li>
+        </ul>
+    </div>
+
+    <!-- Challenges Faced -->
+    <div class="challenges">
+        <h2>Challenges I Faced</h2>
+        <ul>
+            <li>Understanding how to use scripts like <code>prestart</code> effectively to check for missing <code>node_modules</code>.</li>
+            <li>Configuring <code>chalk</code> for proper message styling in the console.</li>
+            <li>Ensuring <code>nodemon</code> restarts automatically without manual intervention.</li>
+        </ul>
+    </div>
+
+    <!-- Improvements -->
+    <div class="improvements">
+        <h2>Improvements</h2>
+        <ul>
+            <li>Added comments in <code>package.json</code> to explain each script's purpose.</li>
+            <li>Used <code>chalk</code> to provide better color-coded log outputs for improved readability.</li>
+            <li>Optimized <code>prestart</code> script to run checks efficiently and reinstall dependencies only when necessary.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+sonia@Sonias-Air level-1 % DEBUG=app:module1 node index.js
+  app:module1 Main function execution started +0ms
+  app:module1 Calling add() function +2ms
+  app:module1 add() called with arguments: a=5, b=3 +0ms
+  app:module1 add() result: 8 +0ms
+The sum of 5 and 3 is: 8
+  app:module1 Calling multiply() function +4ms
+  app:module1 multiply() called with arguments: a=5, b=3 +1ms
+  app:module1 multiply() result: 15 +0ms
+The product of 5 and 3 is: 15
+  app:module1 Main function execution finished +1ms
+sonia@Sonias-Air level-1 % node index.js
+    The sum of 5 and 3 is: 8
+    The product of 5 and 3 is: 15

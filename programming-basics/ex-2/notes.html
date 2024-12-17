@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Command-Line Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2E3A59;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .problem-level {
+            color: #007BFF;
+            font-weight: bold;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        .challenges, .improvements {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #28A745;
+            margin: 10px 0;
+        }
+        .note {
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Node.js Command-Line Program Documentation</h1>
+
+    <!-- Level 1 -->
+    <div class="section">
+        <h2 class="problem-level">Level 1</h2>
+        <p><strong>Problem Description:</strong></p>
+        <ul>
+            <li>Create a script that calculates the sum of numbers passed as command-line arguments.</li>
+            <li>Use <code>process.argv</code> to parse and handle the arguments.</li>
+            <li>Include error handling for invalid inputs (e.g., non-numeric values).</li>
+        </ul>
+        <p><strong>Exit Criteria:</strong></p>
+        <ul>
+            <li>Running the script with valid inputs returns the correct sum.</li>
+            <li>Invalid inputs result in meaningful error messages.</li>
+        </ul>
+    </div>
+
+    <!-- Level 2 -->
+    <div class="section">
+        <h2 class="problem-level">Level 2</h2>
+        <p><strong>Problem Description:</strong></p>
+        <ul>
+            <li>Enhance the script to accept a <code>--multiply</code> flag to multiply the numbers instead of adding them.</li>
+            <li>Update the help text to include usage instructions.</li>
+        </ul>
+        <p><strong>Exit Criteria:</strong></p>
+        <ul>
+            <li>The <code>--multiply</code> flag works as expected.</li>
+            <li>Usage instructions are clear and correct.</li>
+        </ul>
+    </div>
+
+    <!-- Level 3 -->
+    <div class="section">
+        <h2 class="problem-level">Level 3</h2>
+        <p><strong>Problem Description:</strong></p>
+        <ul>
+            <li>Modularize the program by creating a separate file (<code>mathutils.js</code>) for the <code>add</code> and <code>multiply</code> functions.</li>
+            <li>Take the operation followed by operands as arguments (e.g., <code>command add 1 2</code> or <code>command multiply 3 4</code>).</li>
+            <li>Create a script using the <code>bin</code> part of <code>package.json</code>. Use <code>npm link</code> to test the script.</li>
+        </ul>
+        <p><strong>Exit Criteria:</strong></p>
+        <ul>
+            <li>The program uses functions from <code>mathutils.js</code> for calculations.</li>
+            <li>The module is reusable in other scripts.</li>
+            <li>The script can be executed as a global command.</li>
+        </ul>
+    </div>
+
+    <!-- Challenges Faced -->
+    <div class="challenges">
+        <h2>Challenges I Faced</h2>
+        <ul>
+            <li>Understanding how to parse and validate command-line arguments using <code>process.argv</code>.</li>
+            <li>Implementing the <code>--multiply</code> flag and integrating it with the existing sum logic.</li>
+            <li>Using <code>npm link</code> effectively to test the script locally.</li>
+        </ul>
+    </div>
+
+    <!-- Improvements -->
+    <div class="improvements">
+        <h2>Improvements</h2>
+        <ul>
+            <li>Improved user experience with detailed usage instructions in the help text.</li>
+        </ul>
+    </div>
+
+    <p class="note"><em>This program demonstrates handling command-line arguments, modular programming, and script creation for global execution in Node.js.</em></p>
+</body>
+</html>
