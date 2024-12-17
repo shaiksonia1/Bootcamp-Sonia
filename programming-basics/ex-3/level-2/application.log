@@ -1,0 +1,4 @@
+2024-12-17T08:20:31.258Z [INFO]: Program started
+2024-12-17T08:20:31.265Z [INFO]: Operation successful
+2024-12-17T08:20:31.267Z [INFO]: Division result: 5
+2024-12-17T08:20:31.268Z [ERROR]: Error: Division by zero error

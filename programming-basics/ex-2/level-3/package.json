@@ -1,0 +1,14 @@
+{
+  "name": "level-3",
+  "version": "1.0.0",
+  "description": "CLI for add and multiply operations",
+  "main": "index.js",
+  "bin": {
+      "mathops": "./index.js"
+  },
+  "scripts": {
+      "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
