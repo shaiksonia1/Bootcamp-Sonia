@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 5rem;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
+        }
+        ul {
+            margin: 15px 0;
+            padding: 0;
+            list-style-type: square;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise-2 </h1>
+
+    <h2>Challenges Faced</h2>
+    <ul>
+        <li><strong>Setting Up TypeScript:</strong> Configuring TypeScript for the first time and understanding the structure of the tsconfig.json file took some effort and required reading extensive documentation.</li>
+        <li><strong>Dynamic Table Rendering:</strong> Loading JSON data and dynamically generating a sortable table required careful DOM manipulation and integration with TypeScript for type safety.</li>
+        <li><strong>CSV Parsing:</strong> Using PapaParse to fetch and process CSV data involved learning its API and ensuring compatibility with TypeScript interfaces.</li>
+        <li><strong>Table Enhancements:</strong> Adding column filtering and row highlighting required understanding of advanced DOM operations and efficient event handling mechanisms.</li>
+        <li><strong>Build Tool Integration:</strong> Setting up and configuring Vite for the development, testing, and production lifecycle posed challenges in ensuring proper linting, live reload, and optimized bundling.</li>
+        <li><strong>Packaging:</strong> Packaging the project for production required attention to detail in ensuring all dependencies were correctly bundled and the app remained functional post-transpilation.</li>
+        <li><strong>Error Handling:</strong> Debugging type errors and runtime issues during development highlighted the importance of proper type definitions and comprehensive testing.</li>
+    </ul>
+
+    <h2>Improvements for Future Iterations</h2>
+    <ul>
+        <li><strong>Enhanced Type Definitions:</strong> Define more comprehensive and reusable TypeScript interfaces to improve type safety and reduce redundancy.</li>
+        <li><strong>Testing Strategy:</strong> Incorporate unit and integration tests using frameworks like Jest or Mocha to ensure code stability and functionality.</li>
+        <li><strong>Better Project Organization:</strong> Adopt a standardized folder structure for separating concerns such as components, services, and utilities.</li>
+        <li><strong>Advanced Table Features:</strong> Implement additional table functionalities such as pagination, multi-column sorting, and export to CSV/Excel for better usability.</li>
+        <li><strong>Error Logging:</strong> Integrate a logging library (e.g., Winston or Log4js) to capture and manage runtime errors more effectively.</li>
+        <li><strong>Documentation:</strong> Maintain detailed documentation for setting up, running, and extending the project to facilitate onboarding and collaboration.</li>
+        <li><strong>Performance Optimization:</strong> Analyze and optimize the performance of data processing and rendering, especially for large datasets.</li>
+        <li><strong>Automation:</strong> Use tools like Husky and lint-staged for automating linting and type-checking during commits to maintain code quality.</li>
+    </ul>
+
+    <h2>Takeaways</h2>
+    <ul>
+        <li>TypeScript significantly improves code quality and maintainability by enforcing type safety and providing better developer tooling.</li>
+        <li>Incremental development and testing ensure that features are implemented correctly and bugs are identified early.</li>
+        <li>Using modern build tools like Vite accelerates development workflows but requires an initial learning curve.</li>
+        <li>Comprehensive error handling and logging mechanisms are essential for building robust and user-friendly applications.</li>
+    </ul>
+</body>
+</html>

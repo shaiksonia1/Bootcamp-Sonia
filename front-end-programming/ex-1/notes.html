@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 5rem;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
+        }
+        ul {
+            margin: 15px 0;
+            padding: 0;
+            list-style-type: square;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise - 1</h1>
+
+    <h2>Challenges Faced</h2>
+    <ul>
+        <li><strong>DOM Manipulation Complexity:</strong> Managing DOM updates dynamically, especially adding new rows with specific CSS class manipulations, required meticulous attention to detail to ensure correctness.</li>
+        <li><strong>CSS Styling:</strong> Balancing inline CSS and ensuring dynamic addition of styles (like the highlight class) worked seamlessly without conflicts.</li>
+        <li><strong>Google Font Integration:</strong> Dynamically loading a Google Font and ensuring it applied consistently to the table was a nuanced task that required debugging.</li>
+        <li><strong>Browser Information Display:</strong> Extracting accurate browser details and ensuring real-time updates with window resizing posed some initial issues.</li>
+        <li><strong>JSON File Handling:</strong> Moving from inline data to external JSON required understanding of asynchronous loading and ensuring data availability before table rendering.</li>
+        <li><strong>Module Separation:</strong> Dividing JavaScript into modules (data-loader.js and table-renderer.js) highlighted challenges in structuring and managing dependencies.</li>
+        <li><strong>CSV Parsing:</strong> Integrating PapaParse for CSV parsing and ensuring compatibility with AG Grid's expected data format took effort.</li>
+        <li><strong>AG Grid Customization:</strong> Configuring AG Grid for advanced features like row highlighting, sorting, and filtering involved steep learning and extensive documentation review.</li>
+    </ul>
+
+    <h2>Improvements for Future Iterations</h2>
+    <ul>
+        <li><strong>Enhanced Styling:</strong> Move away from inline CSS completely and adopt a modular CSS approach or frameworks like Tailwind or Bootstrap for easier scalability.</li>
+        <li><strong>Code Modularity:</strong> Implement an ES6 module loader or bundler like Webpack to improve dependency management and code organization.</li>
+        <li><strong>Data Management:</strong> Use a lightweight state management library (e.g., Redux or Zustand) to manage student data more robustly.</li>
+        <li><strong>Responsive Design:</strong> Ensure that the table and all other elements are fully responsive for various device screen sizes.</li>
+        <li><strong>Additional Features:</strong> Add more interactive features like pagination, search functionality, or data export (CSV/Excel) options to enhance usability.</li>
+        <li><strong>Performance Optimization:</strong> Optimize the loading and rendering of data, especially when dealing with large CSV files, to prevent UI lag.</li>
+        <li><strong>Error Handling:</strong> Implement robust error handling mechanisms to manage issues like missing or malformed JSON/CSV data gracefully.</li>
+        <li><strong>Testing:</strong> Write unit and integration tests for key features to ensure stability and facilitate future enhancements.</li>
+        <li><strong>Documentation:</strong> Add inline comments and maintain an external README file to document the project structure and usage.</li>
+        <li><strong>Library Exploration:</strong> Explore alternatives to AG Grid for comparison, such as DataTables or Handsontable, to evaluate the best fit for requirements.</li>
+    </ul>
+
+    <h2>Takeaways</h2>
+    <ul>
+        <li>Incremental development allows for addressing challenges in manageable chunks and iteratively improving the application.</li>
+        <li>Separation of concerns (HTML, CSS, JS) is critical for scalability and maintainability in web projects.</li>
+        <li>Using libraries and tools (e.g., AG Grid, PapaParse) accelerates development but requires a steep learning curve.</li>
+        <li>Understanding browser behavior and compatibility is essential for creating a robust front-end experience.</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #0d3b66;
+        }
+        h1 {
+            text-align: center;
+            color: #f4d35e;
+        }
+        table {            
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        th, td {
+            border: 1px solid #faf0ca;
+            padding: 8px;
+            text-align: left;
+            color: #f4f1bb;
+        }
+        th {
+            color: #f4d35e;
+        }
+        .highlight {
+            background-color: #0d3b66;
+            color: #faf0ca;
+            border: 1px solid #faf0ca;
+        }
+        button {
+            margin-right: 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #ffd166;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 3rem;
+        }
+        button:hover {
+            background-color: #f4f1bb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Management Dashboard</h1>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+    <!-- Link to the JavaScript modules -->
+    <script type="module" src="data-loader.js"></script>
+    <script type="module" src="table-renderer.js"></script>
+</body>
+</html>
+
+
+    <!-- Buttons for adding student and changing font -->
+    <button id="addStudent">Add Student</button>
+    <button id="changeFont">Change Font</button>

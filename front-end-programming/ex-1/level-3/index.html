@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-theme-alpine.css"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Student Management Dashboard</h1>
+
+    <div class="button-container">
+      <button id="loadStudents">Load Students from CSV</button>
+      <button id="changeFont">Change Font</button>
+    </div>
+
+    <div
+      id="gridContainer"
+      class="ag-theme-alpine"
+      style="height: 500px; width: 100%"
+    ></div>
+
+    <script src="./papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community@30.2.0/dist/ag-grid-community.min.js"></script>
+    <script type="module" src="data-loader.js"></script>
+    <script type="module" src="table-renderer.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

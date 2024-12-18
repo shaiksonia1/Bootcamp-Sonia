@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",             // This ensures the code is compiled to ES6 (you can use ES2017 as well)
+    "lib": ["dom", "es2017"],    // Adding "es2017" or later ensures that we can use Object.values() and other modern features
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist"
+  },
+  "include": ["./src/**/*"]
+}
