@@ -93,6 +93,7 @@ export class WeatherWidget extends HTMLElement {
           <button id="search-btn">Search</button>
         </div>
         <div class="widget">
+          <div class="icon">${icon}</div>
           <div class="info">
             <div class="city">${city}</div>
             <div class="temp">${temperature}°C</div>
