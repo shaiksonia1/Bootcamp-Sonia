@@ -59,17 +59,22 @@ const productList = document.getElementById("product-list");
 const searchInput = document.getElementById("search-input");
 
 function renderProducts(products) {
-    productList.innerHTML = "";
-    products.forEach(product => {
-        const productDiv = document.createElement("div");
-        productDiv.className = "product";
-        productDiv.innerHTML = `
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <strong>${product.price}</strong>
-        `;
-        productList.appendChild(productDiv);
-    });
+    productList.innerHTML = ""; // Clear current products
+    if (products.length === 0) {
+        productList.innerHTML = "<p>No products found</p>";
+    } else {
+        products.forEach(product => {
+            const productDiv = document.createElement("div");
+            productDiv.className = "product";
+            productDiv.innerHTML = `
+                <h3>${product.name}</h3>
+                <p>${product.description}</p>
+                <strong>${product.price}</strong>
+                <button class="buy-now-btn" onclick="buyNow(${product.id})">Buy Now</button>
+            `;
+            productList.appendChild(productDiv);
+        });
+    }
 }
 
 function searchProducts(query) {
@@ -81,6 +86,16 @@ function searchProducts(query) {
     renderProducts(filteredProducts);
 }
 
+function buyNow(productId) {
+    const product = products.find(p => p.id === productId);
+    if (product) {
+        alert(`You have selected the ${product.name} for ${product.price}. Proceed to checkout!`);
+    } else {
+        alert("Product not found.");
+    }
+}
+
+// Event listener for search input
 searchInput.addEventListener("input", (event) => {
     searchProducts(event.target.value);
 });
