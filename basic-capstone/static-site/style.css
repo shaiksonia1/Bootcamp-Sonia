@@ -107,7 +107,7 @@ body {
 }
 
 .footer {
-    background-color: #333;
+    background: linear-gradient(135deg, #007acc, #005b99);
     color: white;
     text-align: center;
     padding: 2rem;
