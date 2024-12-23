@@ -1,63 +1,33 @@
 const products = [
-    { id: 1, name: "Laptop", price: "$1000", description: "High-performance laptop" },
-    { id: 2, name: "Smartphone", price: "$700", description: "Latest model smartphone" },
-    { id: 3, name: "Headphones", price: "$150", description: "Noise-cancelling headphones" },
-    { id: 4, name: "Smartwatch", price: "$200", description: "Feature-rich smartwatch" },
-    { id: 5, name: "Tablet", price: "$400", description: "Portable and powerful tablet" },
-    { id: 6, name: "Gaming Console", price: "$500", description: "Next-gen gaming console" },
-    { id: 7, name: "Bluetooth Speaker", price: "$120", description: "Compact and powerful speaker" },
-    { id: 8, name: "Desktop PC", price: "$800", description: "High-performance desktop computer" },
-    { id: 9, name: "Monitor", price: "$300", description: "4K ultra HD monitor" },
-    { id: 10, name: "Keyboard", price: "$50", description: "Mechanical gaming keyboard" },
-    { id: 11, name: "Mouse", price: "$30", description: "Ergonomic wireless mouse" },
-    { id: 12, name: "Printer", price: "$150", description: "All-in-one color printer" },
-    { id: 13, name: "Camera", price: "$900", description: "DSLR camera with high resolution" },
-    { id: 14, name: "Action Camera", price: "$300", description: "Waterproof action camera" },
-    { id: 15, name: "Power Bank", price: "$40", description: "Fast-charging power bank" },
-    { id: 16, name: "Drone", price: "$1000", description: "High-performance quadcopter drone" },
-    { id: 17, name: "E-Reader", price: "$150", description: "Compact e-book reader" },
-    { id: 18, name: "Fitness Tracker", price: "$100", description: "Lightweight fitness tracker" },
-    { id: 19, name: "VR Headset", price: "$300", description: "Immersive virtual reality headset" },
-    { id: 20, name: "Graphics Card", price: "$400", description: "High-end gaming graphics card" },
-    { id: 21, name: "External Hard Drive", price: "$100", description: "1TB portable hard drive" },
-    { id: 22, name: "Router", price: "$80", description: "High-speed Wi-Fi router" },
-    { id: 23, name: "Projector", price: "$600", description: "Full HD home projector" },
-    { id: 24, name: "Microwave Oven", price: "$200", description: "Smart microwave oven" },
-    { id: 25, name: "Refrigerator", price: "$1200", description: "Energy-efficient refrigerator" },
-    { id: 26, name: "Air Conditioner", price: "$800", description: "Smart split AC" },
-    { id: 27, name: "Washing Machine", price: "$700", description: "Front-load washing machine" },
-    { id: 28, name: "Vacuum Cleaner", price: "$300", description: "Cordless vacuum cleaner" },
-    { id: 29, name: "Coffee Maker", price: "$100", description: "Automatic coffee maker" },
-    { id: 30, name: "Electric Kettle", price: "$50", description: "Fast boiling kettle" },
-    { id: 31, name: "Toaster", price: "$30", description: "4-slice toaster" },
-    { id: 32, name: "Blender", price: "$100", description: "High-speed blender" },
-    { id: 33, name: "Dishwasher", price: "$900", description: "Energy-efficient dishwasher" },
-    { id: 34, name: "Smart Light Bulb", price: "$20", description: "Wi-Fi-enabled light bulb" },
-    { id: 35, name: "Security Camera", price: "$150", description: "Wireless HD security camera" },
-    { id: 36, name: "Smart Thermostat", price: "$250", description: "Energy-saving thermostat" },
-    { id: 37, name: "Electric Scooter", price: "$500", description: "Lightweight electric scooter" },
-    { id: 38, name: "Electric Bike", price: "$1200", description: "High-performance e-bike" },
-    { id: 39, name: "Hoverboard", price: "$300", description: "Self-balancing hoverboard" },
-    { id: 40, name: "3D Printer", price: "$1500", description: "Compact 3D printer" },
-    { id: 41, name: "Air Purifier", price: "$200", description: "HEPA air purifier" },
-    { id: 42, name: "Smart Doorbell", price: "$150", description: "Video-enabled doorbell" },
-    { id: 43, name: "Electric Grill", price: "$200", description: "Non-stick electric grill" },
-    { id: 44, name: "Stand Mixer", price: "$400", description: "Heavy-duty stand mixer" },
-    { id: 45, name: "Juicer", price: "$150", description: "Cold press juicer" },
-    { id: 46, name: "Electric Toothbrush", price: "$80", description: "Rechargeable toothbrush" },
-    { id: 47, name: "Hair Dryer", price: "$60", description: "Ionic hair dryer" },
-    { id: 48, name: "Shaver", price: "$100", description: "Electric rotary shaver" },
-    { id: 49, name: "Iron", price: "$50", description: "Steam iron" },
-    { id: 50, name: "Heater", price: "$150", description: "Portable room heater" },
-    { id: 51, name: "Fan", price: "$80", description: "Energy-efficient ceiling fan" },
-    { id: 52, name: "Dehumidifier", price: "$300", description: "Compact dehumidifier" },
-    { id: 53, name: "Electric Blanket", price: "$120", description: "Heated blanket" },
-    { id: 54, name: "Water Heater", price: "$250", description: "Tankless water heater" },
-    { id: 55, name: "Smart Lock", price: "$200", description: "Keyless entry smart lock" }
+    { id: 1, name: "Laptop", price: "$1000", description: "High-performance laptop", image: "https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?cs=srgb&dl=pexels-craigmdennis-205421.jpg&fm=jpg" },
+    { id: 2, name: "Smartphone", price: "$700", description: "Latest model smartphone", image: "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?cs=srgb&dl=pexels-fotios-photos-1092644.jpg&fm=jpg" },
+    { id: 3, name: "Headphones", price: "$150", description: "Noise-cancelling headphones", image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D" },
+    { id: 4, name: "Smartwatch", price: "$200", description: "Feature-rich smartwatch", image: "https://m.media-amazon.com/images/I/712YIFdUHLL.jpg" },
+    { id: 5, name: "Tablet", price: "$300", description: "Lightweight tablet", image: "https://cdn.thewirecutter.com/wp-content/media/2024/06/besttablets-2048px-9875.jpg" },
+    { id: 6, name: "Camera", price: "$500", description: "High-resolution camera", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_wmQuZjQoP1IAWVdDiYAOwD2zMQGibjb5Q&s" },
+    { id: 7, name: "Printer", price: "$250", description: "Wireless printer", image: "https://in.canon/media/image/2024/08/21/cc59df256446411da3db8ec6c5307232_G4X70_~2.jpg" },
+    { id: 8, name: "Monitor", price: "$400", description: "4K Ultra HD monitor", image: "https://mdcomputers.lk/wp-content/uploads/2023/08/b6293f98-1e11-4a4a-b640-856461190e5b.jpg" },
+    { id: 10, name: "Mouse", price: "$30", description: "Ergonomic wireless mouse", image: "https://www.portronics.com/cdn/shop/products/Toad_13_1200x1200_1_7cb991ad-02a6-4c03-8d74-3795f112dc8d.jpg?v=1647439819" },
+    { id: 11, name: "Gaming Console", price: "$500", description: "Latest gaming console", image: "https://t4.ftcdn.net/jpg/02/00/53/33/360_F_200533351_xwFkL7ydBNwbMNpVHQV0qz9zQIIsFXW2.jpg" },
+    { id: 12, name: "Router", price: "$100", description: "High-speed router", image: "https://www.lifewire.com/thmb/l-s2qLLInBVfIl6AokC7Zi7Jqqk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/71qNsDlUZL._SL1500_-db9624bf30494933b4d2279b89ea19ef.jpg" },
+    { id: 13, name: "External Hard Drive", price: "$120", description: "1TB external hard drive", image: "https://st.depositphotos.com/1008960/4874/i/450/depositphotos_48748285-stock-photo-usb-hard-drive.jpg" },
+    { id: 14, name: "Power Bank", price: "$40", description: "Fast-charging power bank", image: "https://4.imimg.com/data4/UF/EM/MY-22957092/10000mah-power-bank-500x500.jpg" },
+    { id: 15, name: "Bluetooth Speaker", price: "$70", description: "Portable Bluetooth speaker", image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/speaker/u/q/i/-original-imagsbtckq3njtb2.jpeg?q=90&crop=false" },
+    { id: 16, name: "Drone", price: "$800", description: "Professional camera drone", image: "https://cdn.mos.cms.futurecdn.net/kXUY9hyetVzhZ2scwJP7p3-1200-80.jpg" },
+    { id: 17, name: "Projector", price: "$600", description: "Home theater projector", image: "https://m.media-amazon.com/images/I/718Msrt2xkL.jpg" },
+    { id: 18, name: "Smart Home Hub", price: "$150", description: "Voice-controlled smart hub", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4TRNpZsV9jth5r_FQadplP_HysWSYg4Jig&s" },
+    { id: 19, name: "Fitness Tracker", price: "$100", description: "Waterproof fitness tracker", image: "https://cdn.pixabay.com/photo/2021/11/03/05/33/fitness-band-6764739_1280.jpg" },
+    { id: 20, name: "VR Headset", price: "$300", description: "Immersive VR experience", image: "https://t3.ftcdn.net/jpg/01/39/05/54/360_F_139055472_IOLmdHf01FG3udivfRybELaHoIuCUbtc.jpg" },
+    { id: 22, name: "Laptop Stand", price: "$50", description: "Adjustable laptop stand", image: "https://media.wired.com/photos/65bd18df54e4c9ce4a1be572/master/w_320%2Cc_limit/Gear-Branch-laptop-stand-SOURCE-Branch.jpg" },
+
+
+
+    
 ];
+
+
 const productList = document.getElementById("product-list");
 const searchInput = document.getElementById("search-input");
-
 function renderProducts(products) {
     productList.innerHTML = ""; // Clear current products
     if (products.length === 0) {
@@ -67,6 +37,7 @@ function renderProducts(products) {
             const productDiv = document.createElement("div");
             productDiv.className = "product";
             productDiv.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" class="product-image">
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
                 <strong>${product.price}</strong>
