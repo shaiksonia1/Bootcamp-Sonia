@@ -12,43 +12,55 @@ const FilterWidget = ({ setFilter, papers }) => {
       title,
       citations,
       startYear,
-      endYear
+      endYear,
     });
   };
 
   const handleDownload = () => {
-    // Filter the papers based on current filters
-    const filteredPapers = papers.filter(paper => {
-      const isTitleMatch = title ? paper.title.toLowerCase().includes(title.toLowerCase()) : true;
-      const isCitationsMatch = citations ? paper.citation_count >= parseInt(citations) : true;
-      const isStartYearMatch = startYear ? new Date(paper.published_at).getFullYear() >= parseInt(startYear) : true;
-      const isEndYearMatch = endYear ? new Date(paper.published_at).getFullYear() <= parseInt(endYear) : true;
+    try {
+      // Filter the papers based on current filters
+      const filteredPapers = papers.filter((paper) => {
+        const isTitleMatch = title
+          ? paper.title.toLowerCase().includes(title.toLowerCase())
+          : true;
+        const isCitationsMatch = citations
+          ? paper.citation_count >= parseInt(citations, 10)
+          : true;
+        const isStartYearMatch = startYear
+          ? new Date(paper.published_at).getFullYear() >= parseInt(startYear, 10)
+          : true;
+        const isEndYearMatch = endYear
+          ? new Date(paper.published_at).getFullYear() <= parseInt(endYear, 10)
+          : true;
 
-      return isTitleMatch && isCitationsMatch && isStartYearMatch && isEndYearMatch;
-    });
+        return isTitleMatch && isCitationsMatch && isStartYearMatch && isEndYearMatch;
+      });
 
-    // Check if filtered papers exist
-    if (filteredPapers.length === 0) {
-      alert("No papers match the filter criteria.");
-      return;
+      if (filteredPapers.length === 0) {
+        alert("No papers match the filter criteria.");
+        return;
+      }
+
+      // Convert filtered data to a JSON string
+      const jsonStr = JSON.stringify(filteredPapers, null, 2);
+
+      // Create a Blob from the JSON string
+      const blob = new Blob([jsonStr], { type: 'application/json' });
+
+      // Create an anchor element to simulate a file download
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `filtered_papers_${Date.now()}.json`;
+
+      // Trigger the download
+      link.click();
+
+      // Clean up the object URL
+      URL.revokeObjectURL(link.href);
+    } catch (error) {
+      console.error("Error downloading file:", error);
+      alert("An error occurred while trying to download the file.");
     }
-
-    // Convert filtered data to a JSON string
-    const jsonStr = JSON.stringify(filteredPapers, null, 2);
-
-    // Create a Blob from the JSON string
-    const blob = new Blob([jsonStr], { type: 'application/json' });
-
-    // Create an anchor element to simulate a file download
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'filtered_papers.json';
-
-    // Trigger the download
-    link.click();
-
-    // Clean up the object URL
-    URL.revokeObjectURL(link.href);
   };
 
   return (
@@ -98,7 +110,7 @@ const FilterWidget = ({ setFilter, papers }) => {
         />
       </div>
       <button
-        className="px-4 py-2 bg-[#3c096c] text-white rounded-md hover:bg-[#7b2cbf]"
+        className="px-4 py-2 bg-[#3c096c] text-white rounded-md hover:bg-[#7b2cbf] mr-4" // Added margin-right to the first button
         onClick={handleFilterChange}
       >
         Apply Filters
@@ -109,7 +121,7 @@ const FilterWidget = ({ setFilter, papers }) => {
         className="px-4 py-2 bg-[#3c096c] text-white rounded-md hover:bg-[#7b2cbf]"
         onClick={handleDownload}
       >
-        Download File 
+        Download File
       </button>
     </div>
   );
@@ -118,7 +130,7 @@ const FilterWidget = ({ setFilter, papers }) => {
 // Prop validation for FilterWidget component
 FilterWidget.propTypes = {
   setFilter: PropTypes.func.isRequired,
-  papers: PropTypes.array.isRequired  // Ensure that 'papers' is passed in as an array
+  papers: PropTypes.array.isRequired, // Ensure that 'papers' is passed in as an array
 };
 
 export default FilterWidget;
