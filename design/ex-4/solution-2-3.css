@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
+    margin: 3rem;
     padding: 0;
     background-color: #fff8f0;
   }
@@ -20,5 +20,6 @@ body {
   img {
     max-width: 100%; /* Ensure the image does not exceed the container width */
     height: auto;
+    padding: 1rem;
   }
   

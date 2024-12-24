@@ -7,17 +7,15 @@
   <link rel="stylesheet" href="./solution-2-3.css">
 </head>
 <body>
-  <h1>Responsive Image Example</h1>
+  <h1>Exercise 4: Basics of Images (Level-3)</h1>
+  <a style="text-decoration: none; color: white; background-color: indigo ; padding: 0.5rem; border-radius: 10px;" href="/index.html#design">Home page</a>
 
-  <!-- Picture element with responsive and lazy loading -->
+
   <picture>
-    <!-- Source for devices with larger screens (high resolution) -->
     <source srcset="./img-1.jpg" media="(min-width: 800px)" type="image/jpeg">
     
-    <!-- Source for devices with lower screens (medium resolution) -->
     <source srcset="./medium-resolution.jpg" media="(min-width: 500px)" type="image/jpeg">
     
-    <!-- Default image for small devices or default fallback -->
     <img src="https://picsum.photos/seed/picsum/200/300" alt="A beautiful landscape" loading="lazy" width="100%" height="auto">
   </picture>
 

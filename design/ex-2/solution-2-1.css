@@ -78,6 +78,12 @@ body {
     font-size: 1.4rem;
     text-align: left;
 }
+header{
+    background-color: #590d22;
+    color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+}
 h2{
     color: #590d22;
 }

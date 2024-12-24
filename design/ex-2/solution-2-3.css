@@ -19,8 +19,9 @@ section{
 /* Gradient Theme Section */
 .gradient-section h1 {
     background: linear-gradient(#660708, #ba181b,#e5383b);
-    /* -webkit-background-clip: text; */
-    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;  /* Safari and older WebKit browsers */
+    -moz-background-clip: text;     /* Firefox (not widely supported but included for future compatibility) */    color: transparent;
     font-size: 3rem;
     margin-bottom: 20px;
 }

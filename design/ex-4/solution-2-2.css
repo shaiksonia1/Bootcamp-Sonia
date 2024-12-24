@@ -13,7 +13,14 @@ body {
     height: 60vh; /* Set the header to take up 60% of the viewport height */
     background: url('https://picsum.photos/1920/1080') center center/cover no-repeat; /* Full-bleed image */
   }
-  
+  a{
+    margin: 2rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+  }
+ 
   .header-image::before {
     content: '';
     position: absolute;
