@@ -25,9 +25,18 @@ body, html {
 .header {
     grid-area: header;
     background-color: #1B1A55;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     color: white;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+    margin-top: 1rem;
+    background-color: beige;
+    padding: 0.5rem;
+    border-radius: 10px;
+    display: inline-block;
 }
 h2{
     color: #FBFADA;

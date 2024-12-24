@@ -1,61 +1,92 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
+/* Body Styling */
+body {
     font-family: Arial, sans-serif;
-    background-color: #F8F4E1;
-}
-
-.container {
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
 }
 
-.content {
-    text-align: center;
-    width: 90vw;                /* 60% of the viewport width */
-    padding: 2rem;
-    background-color: #FFEEA9;
+/* Container */
+.container {
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
 }
 
-.movies {
-    padding: 1.5rem;            /* Increased padding for spacing between sections */
+/* Content Styling */
+.content {
+    text-align: center;
 }
 
+/* Title Styling */
 h1 {
-    font-size: 4rem;
-    color: #543310;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 2rem;
-    color: #543310;
-    white-space: nowrap;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
-
 
 p {
-    padding: 5px;
-    font-size: 1.5rem;
-    color: #AF8F6F;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
-img {
-    max-width: 60%;            
-    height: auto;               
-    border-radius: 5px;         
-    margin-top: 1rem;           
-}
-.moviesList{
+/* Movies List Styling */
+.moviesList {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+/* Movie Section Styling */
+.movies {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movies h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.movies img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.movies p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.movies:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 

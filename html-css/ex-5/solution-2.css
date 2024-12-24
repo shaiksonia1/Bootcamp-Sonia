@@ -29,6 +29,16 @@ body, html {
     text-align: center;
     color: white;
 }
+
+.header a {
+    text-decoration: none;
+    color: black;
+    margin-top: 2rem;
+    background-color: beige;
+    padding: 0.5rem;
+    border-radius: 10px;
+    display: inline-block;
+}
 h2{
     color: #FBFADA;
     text-align: center;
