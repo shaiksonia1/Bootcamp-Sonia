@@ -5,84 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node.js Project Setup</title>
     <style>
+        /* Base Styles */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f9f9;
         }
+
         h1, h2 {
             color: #2E3A59;
         }
-        .section {
-            margin-bottom: 20px;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
-        .problem-level {
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+            overflow-x: auto;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        a {
             color: #007BFF;
+            text-decoration: none;
             font-weight: bold;
         }
-        pre {
-            background-color: #F4F4F4;
-            padding: 10px;
-            border: 1px solid #DDD;
-            overflow-x: auto;
+
+        a:hover {
+            text-decoration: underline;
         }
-        .improvements, .challenges {
-            background-color: #F9F9F9;
-            padding: 10px;
+
+        /* Sections */
+        .challenges, .improvements {
             border-left: 4px solid #28A745;
-            margin: 10px 0;
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .challenges {
+            border-left-color: #FF6347;
+        }
+
+        .improvements {
+            border-left-color: #28A745;
         }
     </style>
 </head>
 <body>
+    <a style="text-decoration: none; color: white; background-color: indigo  ; padding: 0.5rem; border-radius: 10px;" href="/index.html#prog-basics">Home page</a>
+
     <h1>Node.js Project Setup Documentation</h1>
 
-    <!-- Level 1 -->
-    <div class="section">
-        <h2 class="problem-level">Level 1</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Initialize a new Node.js project using <code>npm init</code>.</li>
-            <li>Add a <code>start</code> script to run a basic <code>index.js</code> file.</li>
-            <li>Add a <code>dev</code> script to run the same file with debugging output (<code>DEBUG=* node index.js</code>).</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong></p>
-        <ul>
-            <li>Running <code>npm start</code> executes <code>index.js</code>.</li>
-            <li>Running <code>npm run dev</code> shows debugging output.</li>
-        </ul>
-    </div>
+    <h2>Level 1</h2>
+    <p><strong>Problem Description:</strong></p>
+    <ul>
+        <li>Initialize a new Node.js project using <code>npm init</code>.</li>
+        <li>Add a <code>start</code> script to run a basic <code>index.js</code> file.</li>
+        <li>Add a <code>dev</code> script to run the same file with debugging output (<code>DEBUG=* node index.js</code>).</li>
+    </ul>
+    <p><strong>Exit Criteria:</strong></p>
+    <ul>
+        <li>Running <code>npm start</code> executes <code>index.js</code>.</li>
+        <li>Running <code>npm run dev</code> shows debugging output.</li>
+    </ul>
+    <img src="./level-1/image-1.png" alt="Level 1 Example">
 
-    <!-- Level 2 -->
-    <div class="section">
-        <h2 class="problem-level">Level 2</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Install the <code>chalk</code> package and use it in <code>index.js</code> to style console outputs.</li>
-            <li>Add <code>nodemon</code> as a dev dependency to automatically restart the program during development.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong></p>
-        <ul>
-            <li><code>index.js</code> outputs styled messages using <code>chalk</code>.</li>
-            <li>Changes to <code>index.js</code> automatically restart when using <code>nodemon</code>.</li>
-        </ul>
-    </div>
+    <h2>Level 2</h2>
+    <p><strong>Problem Description:</strong></p>
+    <ul>
+        <li>Install the <code>chalk</code> package and use it in <code>index.js</code> to style console outputs.</li>
+        <li>Add <code>nodemon</code> as a dev dependency to automatically restart the program during development.</li>
+    </ul>
+    <p><strong>Exit Criteria:</strong></p>
+    <ul>
+        <li><code>index.js</code> outputs styled messages using <code>chalk</code>.</li>
+        <li>Changes to <code>index.js</code> automatically restart when using <code>nodemon</code>.</li>
+    </ul>
+    <img src="./level-2/image-1.png" alt="Level 2 Example 1">
+    <img src="./level-2/image-2.png" alt="Level 2 Example 2">
 
-    <!-- Level 3 -->
-    <div class="section">
-        <h2 class="problem-level">Level 3</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Add a <code>prestart</code> script to ensure <code>node_modules</code> is available before running the program.</li>
-            <li>Test by removing <code>node_modules</code> and ensuring <code>npm start</code> reinstalls dependencies successfully.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong></p>
-        <ul>
-            <li>The <code>prestart</code> script checks for <code>node_modules</code> and reinstalls dependencies if missing.</li>
-        </ul>
-    </div>
+    <h2>Level 3</h2>
+    <p><strong>Problem Description:</strong></p>
+    <ul>
+        <li>Add a <code>prestart</code> script to ensure <code>node_modules</code> is available before running the program.</li>
+        <li>Test by removing <code>node_modules</code> and ensuring <code>npm start</code> reinstalls dependencies successfully.</li>
+    </ul>
+    <p><strong>Exit Criteria:</strong></p>
+    <ul>
+        <li>The <code>prestart</code> script checks for <code>node_modules</code> and reinstalls dependencies if missing.</li>
+    </ul>
+    <img src="./level-3/image-1.png" alt="Level 3 Example">
 
-    <!-- Challenges Faced -->
     <div class="challenges">
         <h2>Challenges I Faced</h2>
         <ul>
@@ -92,7 +141,6 @@
         </ul>
     </div>
 
-    <!-- Improvements -->
     <div class="improvements">
         <h2>Improvements</h2>
         <ul>

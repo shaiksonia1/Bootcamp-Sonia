@@ -6,46 +6,78 @@
     <title>Node.js Command-Line Program</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Arial", sans-serif;
             margin: 20px;
-            line-height: 1.6;
             background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: indigo;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        a:hover {
+            background-color: #4b0082;
+            transform: scale(1.05);
         }
         h1, h2 {
             color: #2E3A59;
+            margin-bottom: 15px;
         }
-        .section {
-            margin-bottom: 20px;
-        }
-        .problem-level {
-            color: #007BFF;
-            font-weight: bold;
+        ul {
+            margin: 10px 0 20px;
+            padding-left: 20px;
+            list-style: square;
         }
         pre {
             background-color: #f4f4f4;
-            padding: 10px;
+            padding: 15px;
             border: 1px solid #ddd;
+            border-radius: 8px;
             overflow-x: auto;
+            font-size: 0.9rem;
+        }
+        div {
+            margin-bottom: 20px;
         }
         .challenges, .improvements {
-            background-color: #f9f9f9;
-            padding: 10px;
+            padding: 15px;
             border-left: 4px solid #28A745;
-            margin: 10px 0;
+            background-color: #f9f9f9;
+            margin: 20px 0;
         }
-        .note {
-            font-style: italic;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            display: block;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #007BFF;
+        }
+        em {
             color: #555;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
+    <a href="/index.html#prog-basics">Home Page</a>
+
     <h1>Node.js Command-Line Program Documentation</h1>
 
     <!-- Level 1 -->
-    <div class="section">
-        <h2 class="problem-level">Level 1</h2>
+    <div>
+        <h2>Level 1</h2>
         <p><strong>Problem Description:</strong></p>
         <ul>
             <li>Create a script that calculates the sum of numbers passed as command-line arguments.</li>
@@ -58,10 +90,13 @@
             <li>Invalid inputs result in meaningful error messages.</li>
         </ul>
     </div>
+    <div>
+        <img src="./level-1/image.png" alt="Level 1 Example">
+    </div>
 
     <!-- Level 2 -->
-    <div class="section">
-        <h2 class="problem-level">Level 2</h2>
+    <div>
+        <h2>Level 2</h2>
         <p><strong>Problem Description:</strong></p>
         <ul>
             <li>Enhance the script to accept a <code>--multiply</code> flag to multiply the numbers instead of adding them.</li>
@@ -73,10 +108,13 @@
             <li>Usage instructions are clear and correct.</li>
         </ul>
     </div>
+    <div>
+        <img src="./level-2/image.png" alt="Level 2 Example">
+    </div>
 
     <!-- Level 3 -->
-    <div class="section">
-        <h2 class="problem-level">Level 3</h2>
+    <div>
+        <h2>Level 3</h2>
         <p><strong>Problem Description:</strong></p>
         <ul>
             <li>Modularize the program by creating a separate file (<code>mathutils.js</code>) for the <code>add</code> and <code>multiply</code> functions.</li>
@@ -89,6 +127,9 @@
             <li>The module is reusable in other scripts.</li>
             <li>The script can be executed as a global command.</li>
         </ul>
+    </div>
+    <div>
+        <img src="./level-3/image.png" alt="Level 3 Example">
     </div>
 
     <!-- Challenges Faced -->
@@ -109,6 +150,6 @@
         </ul>
     </div>
 
-    <p class="note"><em>This program demonstrates handling command-line arguments, modular programming, and script creation for global execution in Node.js.</em></p>
+    <p><em>This program demonstrates handling command-line arguments, modular programming, and script creation for global execution in Node.js.</em></p>
 </body>
 </html>
