@@ -25,6 +25,7 @@ body, html {
     width: clamp(320px, 90vw, 1200px);
     padding: 2rem;
     height: auto;
+    margin-top: 3rem;
     border-radius: 10px;
     background-color: #FFEEA9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -41,6 +42,7 @@ body, html {
 }
 
 h1 {
+    margin-top: 3rem;
     font-size: clamp(2rem, 6vw, 3rem);
     color: #543310;
 }
@@ -70,7 +72,7 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .movies {

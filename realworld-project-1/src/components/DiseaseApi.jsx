@@ -151,7 +151,7 @@ const DiseaseApi = () => {
                       href={result.iri}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 font-semibold"
+                      className="text-blue-600 font-semibold "
                     >
                       {result.iri}
                     </a>

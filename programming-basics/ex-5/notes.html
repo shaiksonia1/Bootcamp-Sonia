@@ -6,84 +6,169 @@
     <title>Exercise 5: Managing Environment Variables with dotenv</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
             line-height: 1.6;
-            background-color: #f8f9fa;
+            background-color: #f4f7fa;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
         }
+
         h1, h2 {
             color: #2E3A59;
-        }
-        .section {
+            text-align: center;
             margin-bottom: 20px;
+            font-weight: 600;
         }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            justify-content: center
+
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background-color: #4C6EF5;
+            padding: 0.75rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #3a56e3;
+        }
+
         .challenges, .improvements {
             background-color: #f9f9f9;
-            padding: 10px;
+            padding: 20px;
             border-left: 4px solid #17A2B8;
-            margin: 10px 0;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2E3A59;
+            color: white;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
 <body>
-    <a style="text-decoration: none; color: white; background-color: indigo  ; padding: 0.5rem; border-radius: 10px;" href="/index.html#prog-basics">Home page</a>
-
-    <h1>Exercise 5: Managing Environment Variables with <code>dotenv</code></h1>
-
-    <div class="section">
-        <h2>Level 1</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Install <code>dotenv</code> and create a <code>.env</code> file with configuration variables (e.g., <code>PORT</code>, <code>DB_HOST</code>).</li>
-            <li>Load the variables into the program and use them for configuration.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong> The program reads and uses values from <code>.env</code>.</p>
-    </div>
-<div>
-    <img src="./level-1/image.png" alt="">
-</div>
-    <div class="section">
-        <h2>Level 2</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Add fallback values for missing environment variables.</li>
-            <li>Log a warning when a variable is missing.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong> The program handles missing variables gracefully.</p>
-    </div>
-    <div>
-        <img src="./level-2/image.png" alt="">
-    </div>
-    <div class="section">
-        <h2>Level 3</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Use environment variables to configure a database connection and API credentials. (For this exercise, use a SQLite file-based database.)</li>
-            <li>Securely log sensitive configuration details.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong> Sensitive information is handled securely.</p>
-    </div>
-    <div>
-        <img src="./level-3/image.png" alt="">
-    </div>
-    <div class="challenges">
-        <h2>Challenges I Faced</h2>
-        <ul>
-            <li>Ensuring sensitive information is not exposed in logs.</li>
-            <li>Handling missing or invalid environment variables during runtime.</li>
-            <li>Setting up the SQLite database connection using environment variables.</li>
-        </ul>
+    <div class="btn-container">
+        <a class="btn" href="/index.html#prog-basics">Home Page</a>
+        <a class="btn" href="../ex-6/notes.html">Programming Basics Ex-6</a>
+        <a class="btn" href="../ex-4/notes.html">Back</a>
     </div>
 
-    <div class="improvements">
-        <h2>Improvements</h2>
-        <ul>
-            <li>Added clear fallback values for missing configuration variables.</li>
-            <li>Documented the structure and usage of the <code>.env</code> file.</li>
-            <li>Implemented secure logging mechanisms to mask sensitive details.</li>
-        </ul>
+    <div class="container">
+        <h1>Exercise 5: Managing Environment Variables with <code>dotenv</code></h1>
+
+        <div class="section">
+            <h2>Level 1</h2>
+            <p><strong>Problem Description:</strong></p>
+            <ul>
+                <li>Install <code>dotenv</code> and create a <code>.env</code> file with configuration variables (e.g., <code>PORT</code>, <code>DB_HOST</code>).</li>
+                <li>Load the variables into the program and use them for configuration.</li>
+            </ul>
+            <p><strong>Exit Criteria:</strong> The program reads and uses values from <code>.env</code>.</p>
+            <img src="./level-1/image.png" alt="Level 1 Example">
+        </div>
+
+        <div class="section">
+            <h2>Level 2</h2>
+            <p><strong>Problem Description:</strong></p>
+            <ul>
+                <li>Add fallback values for missing environment variables.</li>
+                <li>Log a warning when a variable is missing.</li>
+            </ul>
+            <p><strong>Exit Criteria:</strong> The program handles missing variables gracefully.</p>
+            <img src="./level-2/image.png" alt="Level 2 Example">
+        </div>
+
+        <div class="section">
+            <h2>Level 3</h2>
+            <p><strong>Problem Description:</strong></p>
+            <ul>
+                <li>Use environment variables to configure a database connection and API credentials. (For this exercise, use a SQLite file-based database.)</li>
+                <li>Securely log sensitive configuration details.</li>
+            </ul>
+            <p><strong>Exit Criteria:</strong> Sensitive information is handled securely.</p>
+            <img src="./level-3/image.png" alt="Level 3 Example">
+        </div>
+
+        <div class="challenges">
+            <h2>Challenges I Faced</h2>
+            <ul>
+                <li>Ensuring sensitive information is not exposed in logs.</li>
+                <li>Handling missing or invalid environment variables during runtime.</li>
+                <li>Setting up the SQLite database connection using environment variables.</li>
+            </ul>
+        </div>
+
+        <div class="improvements">
+            <h2>Improvements</h2>
+            <ul>
+                <li>Added clear fallback values for missing configuration variables.</li>
+                <li>Documented the structure and usage of the <code>.env</code> file.</li>
+                <li>Implemented secure logging mechanisms to mask sensitive details.</li>
+            </ul>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-```

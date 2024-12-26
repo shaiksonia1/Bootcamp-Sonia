@@ -7,100 +7,175 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f9;
             color: #333;
         }
+
         header {
             text-align: center;
-            margin-bottom: 20px;
+            background-color: #2d3e50;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
-            color: #2d3e50;
+            margin: 0;
+            font-size: 2rem;
         }
+
         h2 {
             color: #4a90e2;
+            margin-bottom: 10px;
         }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-container .crimson {
+            background-color: crimson;
+        }
+
+        .button-container .indigo {
+            background-color: indigo;
+        }
+
         section {
-            margin-bottom: 30px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         ul {
             list-style-type: square;
+            padding-left: 20px;
         }
+
         footer {
             text-align: center;
             margin-top: 30px;
-            font-size: 0.9em;
+            padding: 10px;
+            background-color: #2d3e50;
             color: #777;
+            font-size: 0.9em;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 380px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        p {
+            margin: 0 0 15px;
+            line-height: 1.6;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <a style="text-decoration: none; color: white; background-color: indigo; padding: 0.5rem; border-radius: 10px;" href="https://paper-vista-react.vercel.app/" target="_blank">paper-vista-site</a>
-    <a style="text-decoration: none; color: white; background-color: indigo; padding: 0.5rem; border-radius: 10px;" href="https://weather-app-react-5axb.vercel.app/" target="_blank">weather-app-site</a>
+    <header>
+        <h1>Notes on Weather and Research Paper</h1>
+    </header>
 
-    <a style="text-decoration: none; color: white; background-color: indigo ; padding: 0.5rem; border-radius: 10px;" href="/index.html#basic-capstone-2">Home page</a>
-<header>
-    <h1>Notes on Weather and Research Paper</h1>
-</header>
+    <div class="button-container">
+        <a class="crimson" href="https://paper-vista-react.vercel.app/" target="_blank">paper-vista-site</a>
+        <a class="crimson" href="https://weather-app-react-5axb.vercel.app/" target="_blank">weather-app-site</a>
+        <a class="indigo" href="/basic-capstone/weather-widget/notes.html">back</a>
+        <a class="indigo" href="/basic-review/sonia-review.html">basic-review</a>
+        <a class="indigo" href="/index.html#basic-capstone-2">Home page</a>
+    </div>
 
-<section>
-    <h2>Weather</h2>
-    <p>The weather plays a significant role in various fields of study, from agriculture to climate change research. Some key points to note about the weather:</p>
-    <ul>
-        <li>Understanding weather patterns can help in predicting natural disasters like hurricanes or storms.</li>
-        <li>Weather data is crucial for various industries like agriculture, transportation, and aviation.</li>
-        <li>Advancements in technology have led to better weather prediction models.</li>
-    </ul>
-</section>
+    <section>
+        <h2>Weather</h2>
+        <p>The weather plays a significant role in various fields of study, from agriculture to climate change research. Some key points to note about the weather:</p>
+        <ul>
+            <li>Understanding weather patterns can help in predicting natural disasters like hurricanes or storms.</li>
+            <li>Weather data is crucial for various industries like agriculture, transportation, and aviation.</li>
+            <li>Advancements in technology have led to better weather prediction models.</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Research Paper</h2>
-    <p>My research paper has focused on studying weather patterns, data collection, and analysis. Here are the challenges faced during the process:</p>
-    <ul>
-        <li>Accessing reliable and up-to-date weather data sources.</li>
-        <li>Dealing with inconsistencies in data and missing information.</li>
-        <li>Understanding and implementing complex weather models for accurate predictions.</li>
-    </ul>
-</section>
+    <section>
+        <h2>Research Paper</h2>
+        <p>My research paper has focused on studying weather patterns, data collection, and analysis. Here are the challenges faced during the process:</p>
+        <ul>
+            <li>Accessing reliable and up-to-date weather data sources.</li>
+            <li>Dealing with inconsistencies in data and missing information.</li>
+            <li>Understanding and implementing complex weather models for accurate predictions.</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Challenges Faced</h2>
-    <p>During my research, several challenges emerged that I had to overcome:</p>
-    <ul>
-        <li><strong>Data Quality:</strong> Inconsistent or incomplete data led to difficulties in making accurate predictions.</li>
-        <li><strong>Model Complexity:</strong> Weather models can be highly complex and require significant computational resources.</li>
-        <li><strong>Time Management:</strong> Balancing research, data collection, and analysis with other academic responsibilities was challenging.</li>
-    </ul>
-</section>
+    <section>
+        <h2>Challenges Faced</h2>
+        <p>During my research, several challenges emerged that I had to overcome:</p>
+        <ul>
+            <li><strong>Data Quality:</strong> Inconsistent or incomplete data led to difficulties in making accurate predictions.</li>
+            <li><strong>Model Complexity:</strong> Weather models can be highly complex and require significant computational resources.</li>
+            <li><strong>Time Management:</strong> Balancing research, data collection, and analysis with other academic responsibilities was challenging.</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Improvement Areas</h2>
-    <p>There are several ways I can improve my approach to future research and studies:</p>
-    <ul>
-        <li><strong>Better Data Collection:</strong> Ensuring access to more reliable and comprehensive data sources will improve the quality of my work.</li>
-        <li><strong>Enhanced Model Understanding:</strong> Spending more time learning about complex weather prediction models will help me create more accurate forecasts.</li>
-        <li><strong>Time Management:</strong> Allocating specific time slots for research and analysis can help in managing multiple tasks effectively.</li>
-    </ul>
-</section>
+    <section>
+        <h2>Improvement Areas</h2>
+        <p>There are several ways I can improve my approach to future research and studies:</p>
+        <ul>
+            <li><strong>Better Data Collection:</strong> Ensuring access to more reliable and comprehensive data sources will improve the quality of my work.</li>
+            <li><strong>Enhanced Model Understanding:</strong> Spending more time learning about complex weather prediction models will help me create more accurate forecasts.</li>
+            <li><strong>Time Management:</strong> Allocating specific time slots for research and analysis can help in managing multiple tasks effectively.</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Approach for Future Research</h2>
-    <p>For future research, I plan to approach my work with a more structured methodology:</p>
-    <ul>
-        <li>Start with a comprehensive literature review to understand current trends and gaps in the field.</li>
-        <li>Utilize machine learning models to predict weather patterns based on historical data.</li>
-        <li>Collaborate with experts in meteorology and data science for insights and guidance.</li>
-    </ul>
-</section>
+    <section>
+        <h2>Approach for Future Research</h2>
+        <p>For future research, I plan to approach my work with a more structured methodology:</p>
+        <ul>
+            <li>Start with a comprehensive literature review to understand current trends and gaps in the field.</li>
+            <li>Utilize machine learning models to predict weather patterns based on historical data.</li>
+            <li>Collaborate with experts in meteorology and data science for insights and guidance.</li>
+        </ul>
+    </section>
 
-<section>
-    <img src="./level-2/my-react-project/image-1.png" alt="image">
-    <img src="./level-2/my-react-project/image-2.png" alt="image">
-</section>
-<footer>
-    <p>Created by Shaik Sonia | December 2024</p>
-</footer>
+    <section>
+        <div class="image-container">
+            <img src="./paper-vista-react/image-1.png" alt="Research Paper Image 1">
+            <img src="./paper-vista-react/image-2.png" alt="Research Paper Image 2">
+        </div>
+    </section>
 
+    <footer>
+        <p>Created by Shaik Sonia | December 2024</p>
+    </footer>
 </body>
 </html>

@@ -4,46 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Filtering Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #2a7f62;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        nav {
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background-color: indigo;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 2rem 4rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #2a7f62;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-left: 20px;
+        }
+
+        .image-container {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #2a7f62;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+        }
+    </style>
 </head>
-<a style="text-decoration: none; color: white; background-color: indigo; padding: 0.5rem; border-radius: 10px;" href="https://paper-vista-z1su.vercel.app/" target="_blank">Link to site</a>
+<body>
 
-<a style="text-decoration: none; color: white; background-color: indigo ; padding: 0.5rem; border-radius: 10px;" href="/index.html#basic-capstone">Home page</a>
-<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 4rem; padding: 20px;">
+    <header>
+        <h1>Data Filtering Notes</h1>
+    </header>
 
-    <h1 style="text-align: center; color: #2a7f62;">Notes on Challenges and Improvements in Data Filtering</h1>
+    <nav>
+        <a href="https://paper-vista-z1su.vercel.app/" target="_blank">Link to paper-vista</a>
+        <a href="/basic-capstone/static-site/notes.html">Static Site</a>
+        <a href="/front-end-programming/ex-6/notes.html">Back</a>
+        <a href="/index.html#basic-capstone">Home Page</a>
+    </nav>
 
-    <h2 style="color: #2a7f62;">Challenges Faced</h2>
-    <ul style="color: #555; font-size: 16px; line-height: 1.6;">
-        <li>Managing the filtering logic to handle edge cases, such as empty filters or mismatched data types.</li>
-        <li>Optimizing the pagination logic to dynamically adjust the page count based on filters.</li>
-        <li>Handling errors gracefully when the JSON file failed to load or had invalid data.</li>
-        <li>Implementing "Read More" functionality dynamically for long text while maintaining a consistent user interface.</li>
-    </ul>
+    <main>
+        <section>
+            <h2>Challenges Faced</h2>
+            <ul>
+                <li>Managing the filtering logic to handle edge cases, such as empty filters or mismatched data types.</li>
+                <li>Optimizing the pagination logic to dynamically adjust the page count based on filters.</li>
+                <li>Handling errors gracefully when the JSON file failed to load or had invalid data.</li>
+                <li>Implementing "Read More" functionality dynamically for long text while maintaining a consistent user interface.</li>
+            </ul>
+        </section>
 
-    <h2 style="color: #2a7f62;">Improvements</h2>
-    <ul style="color: #555; font-size: 16px; line-height: 1.6;">
-        <li>Adding user-friendly error messages and tooltips to guide users in applying filters effectively.</li>
-        <li>Implementing a debounce mechanism for the filter inputs to optimize performance and prevent redundant filter operations.</li>
-        <li>Using a loading indicator while fetching and processing data to enhance user experience.</li>
-        <li>Allowing users to save and load their filter configurations for easier access in subsequent sessions.</li>
-        <li>Integrating accessibility features to ensure compatibility with screen readers and other assistive technologies.</li>
-        <li>Enhancing the "Read More" functionality to improve usability on mobile devices.</li>
-    </ul>
+        <section>
+            <h2>Improvements</h2>
+            <ul>
+                <li>Adding user-friendly error messages and tooltips to guide users in applying filters effectively.</li>
+                <li>Implementing a debounce mechanism for the filter inputs to optimize performance and prevent redundant filter operations.</li>
+                <li>Using a loading indicator while fetching and processing data to enhance user experience.</li>
+                <li>Allowing users to save and load their filter configurations for easier access in subsequent sessions.</li>
+                <li>Integrating accessibility features to ensure compatibility with screen readers and other assistive technologies.</li>
+                <li>Enhancing the "Read More" functionality to improve usability on mobile devices.</li>
+            </ul>
+        </section>
 
-    <h2 style="color: #2a7f62;">Steps for Converting CSV to JSON</h2>
-    <p style="color: #555; font-size: 16px; line-height: 1.6;">To ensure that the data was in the appropriate format for the JavaScript code, a CSV file was converted to JSON. Here is an outline of the process:</p>
-    <ol style="color: #555; font-size: 16px; line-height: 1.6;">
-        <li>Loaded the CSV file into a program capable of handling data transformations.</li>
-        <li>Mapped the CSV headers to the JSON keys, ensuring consistency with the JavaScript code's expectations.</li>
-        <li>Exported the data in JSON format, structured as an array of objects, with each object representing a paper.</li>
-        <li>Validated the JSON file against a sample to ensure compatibility with the JavaScript filtering logic.</li>
-    </ol>
+        <section>
+            <h2>Steps for Converting CSV to JSON</h2>
+            <p>To ensure that the data was in the appropriate format for the JavaScript code, a CSV file was converted to JSON. Here is an outline of the process:</p>
+            <ol>
+                <li>Loaded the CSV file into a program capable of handling data transformations.</li>
+                <li>Mapped the CSV headers to the JSON keys, ensuring consistency with the JavaScript code's expectations.</li>
+                <li>Exported the data in JSON format, structured as an array of objects, with each object representing a paper.</li>
+                <li>Validated the JSON file against a sample to ensure compatibility with the JavaScript filtering logic.</li>
+            </ol>
+        </section>
 
-    <h2 style="color: #2a7f62;">Chat Gpt Link</h2>
-    <a style="text-decoration: none; color: #555;" href="https://chatgpt.com/share/6765865a-1bac-8005-9e0f-9239a218d346" style="color: #2a7f62; font-size: 2rem;">Link for chatgpt</a>
+        <section>
+            <h2>Chat Gpt Link</h2>
+            <a href="https://chatgpt.com/share/6765865a-1bac-8005-9e0f-9239a218d346" target="_blank">Link for ChatGPT</a>
+        </section>
 
-<div style="margin: 1rem; display: flex; gap: 2rem;">
-    <img src="./image.png" alt="image-1" width="100%%">
-</div>
+        <div class="image-container">
+            <img src="./image.png" alt="image-1">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Data Filtering Notes. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

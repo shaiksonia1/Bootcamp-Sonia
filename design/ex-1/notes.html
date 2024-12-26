@@ -8,75 +8,146 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
-            padding: 10px;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
+
         h1, h2 {
             text-align: center;
             font-family: 'Times New Roman', serif;
+            color: #2c3e50;
         }
+
         h1 {
             font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
+
         h2 {
             font-size: 2em;
-            margin-top: 20px;
+            margin: 30px 0 10px;
             text-decoration: underline;
         }
+
         .notes {
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             border-left: 5px solid #3498db;
-            padding: 15px;
+            padding: 20px;
             margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .notes:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            color: white;
+            background-color: indigo;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .button-container a:hover {
+            background-color: #4a4aed;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <a style="text-decoration: none; color: white; background-color: indigo ; padding: 0.5rem; border-radius: 10px;" href="/index.html#design">Home page</a>
-
-    <h1>Exercise 1: Basics of Fonts</h1>
-    <h2>Thought Process</h2>
-    <div class="notes">
-        <p>
-            I approached this exercise by breaking it down into three levels to understand and apply font styles systematically. 
-            My goal was to experiment with system fonts, Google Fonts, and custom fonts while understanding the basics of typography.
-        </p>
-    </div>
-    
-    <h2>Level 1: System Fonts</h2>
-    <div class="notes">
-        <p>
-            I started with system fonts such as Arial, Times New Roman, and Courier. Different font weights were applied to various 
-            sections of the text to observe the effects of bold, light, and normal weights. This helped me create a visual hierarchy.
-        </p>
+    <div class="button-container">
+        <a href="/index.html#design">Home page</a>
     </div>
 
-    <h2>Level 2: Google Fonts and Variable Fonts</h2>
-    <div class="notes">
-        <p>
-            I integrated Google Fonts for better design flexibility. I used a sans-serif font for body text, a serif font for 
-            headings, and a monospace font for code snippets. Variable fonts were explored to illustrate the flexibility in adjusting 
-            weights dynamically. I used drop caps, shadows, and text masking to make text visually appealing.
-        </p>
-    </div>
+    <header>
+        <h1>Exercise 1: Basics of Fonts</h1>
+    </header>
 
-    <h2>Level 3: Custom Fonts and Hierarchy</h2>
-    <div class="notes">
-        <p>
-            A custom font called Geist was installed locally and applied to the page. To enhance typographic hierarchy, I combined 
-            multiple font families, using distinct fonts for headers and body text. Font spacing, line height, and paragraph 
-            alignment were adjusted to ensure readability and style consistency.
-        </p>
-    </div>
+    <main>
+        <section>
+            <h2>Thought Process</h2>
+            <div class="notes">
+                <p>
+                    I approached this exercise by breaking it down into three levels to understand and apply font styles systematically. 
+                    My goal was to experiment with system fonts, Google Fonts, and custom fonts while understanding the basics of typography.
+                </p>
+            </div>
+        </section>
 
-    <h2>Problem-Solving Approach</h2>
-    <div class="notes">
-        <p>
-            For each level, I iteratively tested and refined the styles. Challenges, such as loading fonts and applying advanced 
-            typography features, were addressed by referring to documentation and testing various configurations. Each section 
-            of the page contains comments and descriptions to guide users through the changes and effects.
-        </p>
-    </div>
+        <section>
+            <h2>Level 1: System Fonts</h2>
+            <div class="notes">
+                <p>
+                    I started with system fonts such as Arial, Times New Roman, and Courier. Different font weights were applied to various 
+                    sections of the text to observe the effects of bold, light, and normal weights. This helped me create a visual hierarchy.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Level 2: Google Fonts and Variable Fonts</h2>
+            <div class="notes">
+                <p>
+                    I integrated Google Fonts for better design flexibility. I used a sans-serif font for body text, a serif font for 
+                    headings, and a monospace font for code snippets. Variable fonts were explored to illustrate the flexibility in adjusting 
+                    weights dynamically. I used drop caps, shadows, and text masking to make text visually appealing.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Level 3: Custom Fonts and Hierarchy</h2>
+            <div class="notes">
+                <p>
+                    A custom font called Geist was installed locally and applied to the page. To enhance typographic hierarchy, I combined 
+                    multiple font families, using distinct fonts for headers and body text. Font spacing, line height, and paragraph 
+                    alignment were adjusted to ensure readability and style consistency.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Problem-Solving Approach</h2>
+            <div class="notes">
+                <p>
+                    For each level, I iteratively tested and refined the styles. Challenges, such as loading fonts and applying advanced 
+                    typography features, were addressed by referring to documentation and testing various configurations. Each section 
+                    of the page contains comments and descriptions to guide users through the changes and effects.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shaik Sonia. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

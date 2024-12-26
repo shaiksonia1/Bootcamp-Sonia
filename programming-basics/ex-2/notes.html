@@ -5,59 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node.js Command-Line Program</title>
     <style>
+        /* General Reset and Body Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: "Arial", sans-serif;
-            margin: 20px;
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
+            margin: 20px;
         }
-        a {
+
+        /* Header Styles */
+        header {
+            background-color: #007bff;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+        }
+        header h1 {
+            margin-bottom: 10px;
+        }
+        header a {
             text-decoration: none;
-            color: #fff;
+            color: white;
             background-color: indigo;
             padding: 10px 15px;
             border-radius: 8px;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            display: inline-block;
-            margin-bottom: 20px;
+            margin-right: 10px;
         }
-        a:hover {
+        header a:hover {
             background-color: #4b0082;
             transform: scale(1.05);
         }
-        h1, h2 {
+
+        /* Main Content Styles */
+        .main-content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section and Subsection Styles */
+        h2 {
             color: #2E3A59;
             margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
         }
+
         ul {
             margin: 10px 0 20px;
             padding-left: 20px;
             list-style: square;
         }
+
         pre {
             background-color: #f4f4f4;
             padding: 15px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            overflow-x: auto;
             font-size: 0.9rem;
+            overflow-x: auto;
         }
-        div {
-            margin-bottom: 20px;
-        }
-        .challenges, .improvements {
-            padding: 15px;
-            border-left: 4px solid #28A745;
-            background-color: #f9f9f9;
-            margin: 20px 0;
-        }
+
+        /* Image Styles */
         img {
             max-width: 100%;
             height: auto;
             margin: 20px 0;
             display: block;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
+        /* Div Container Styles */
+        .challenges, .improvements {
+            padding: 15px;
+            border-left: 4px solid #28A745;
+            background-color: #f9f9f9;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                margin: 10px;
+            }
+
+            .main-content {
+                padding: 15px;
+            }
+
+            header a {
+                padding: 8px 12px;
+            }
+        }
+
+        /* Text Styles */
         p {
             margin-bottom: 10px;
         }
@@ -65,91 +129,105 @@
             color: #007BFF;
         }
         em {
-            color: #555;
+            
             font-style: italic;
         }
     </style>
 </head>
 <body>
-    <a href="/index.html#prog-basics">Home Page</a>
 
-    <h1>Node.js Command-Line Program Documentation</h1>
+    <!-- Header Section -->
+    <header>
+        <h1>Node.js Command-Line Program Documentation</h1>
+        <nav>
+            <a href="/index.html#prog-basics">Home Page</a>
+            <a href="../ex-3/notes.html">Programming Basics Ex-3</a>
+            <a href="../ex-1/notes.html">Back</a>
+        </nav>
+    </header>
 
-    <!-- Level 1 -->
-    <div>
-        <h2>Level 1</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Create a script that calculates the sum of numbers passed as command-line arguments.</li>
-            <li>Use <code>process.argv</code> to parse and handle the arguments.</li>
-            <li>Include error handling for invalid inputs (e.g., non-numeric values).</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong></p>
-        <ul>
-            <li>Running the script with valid inputs returns the correct sum.</li>
-            <li>Invalid inputs result in meaningful error messages.</li>
-        </ul>
-    </div>
-    <div>
-        <img src="./level-1/image.png" alt="Level 1 Example">
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Level 1 -->
+        <div>
+            <h2>Level 1</h2>
+            <p><strong>Problem Description:</strong></p>
+            <ul>
+                <li>Create a script that calculates the sum of numbers passed as command-line arguments.</li>
+                <li>Use <code>process.argv</code> to parse and handle the arguments.</li>
+                <li>Include error handling for invalid inputs (e.g., non-numeric values).</li>
+            </ul>
+            <p><strong>Exit Criteria:</strong></p>
+            <ul>
+                <li>Running the script with valid inputs returns the correct sum.</li>
+                <li>Invalid inputs result in meaningful error messages.</li>
+            </ul>
+        </div>
+        <div>
+            <img src="./level-1/image.png" alt="Level 1 Example">
+        </div>
+
+        <!-- Level 2 -->
+        <div>
+            <h2>Level 2</h2>
+            <p><strong>Problem Description:</strong></p>
+            <ul>
+                <li>Enhance the script to accept a <code>--multiply</code> flag to multiply the numbers instead of adding them.</li>
+                <li>Update the help text to include usage instructions.</li>
+            </ul>
+            <p><strong>Exit Criteria:</strong></p>
+            <ul>
+                <li>The <code>--multiply</code> flag works as expected.</li>
+                <li>Usage instructions are clear and correct.</li>
+            </ul>
+        </div>
+        <div>
+            <img src="./level-2/image.png" alt="Level 2 Example">
+        </div>
+
+        <!-- Level 3 -->
+        <div>
+            <h2>Level 3</h2>
+            <p><strong>Problem Description:</strong></p>
+            <ul>
+                <li>Modularize the program by creating a separate file (<code>mathutils.js</code>) for the <code>add</code> and <code>multiply</code> functions.</li>
+                <li>Take the operation followed by operands as arguments (e.g., <code>command add 1 2</code> or <code>command multiply 3 4</code>).</li>
+                <li>Create a script using the <code>bin</code> part of <code>package.json</code>. Use <code>npm link</code> to test the script.</li>
+            </ul>
+            <p><strong>Exit Criteria:</strong></p>
+            <ul>
+                <li>The program uses functions from <code>mathutils.js</code> for calculations.</li>
+                <li>The module is reusable in other scripts.</li>
+                <li>The script can be executed as a global command.</li>
+            </ul>
+        </div>
+        <div>
+            <img src="./level-3/image.png" alt="Level 3 Example">
+        </div>
+
+        <!-- Challenges Faced -->
+        <div class="challenges">
+            <h2>Challenges I Faced</h2>
+            <ul>
+                <li>Understanding how to parse and validate command-line arguments using <code>process.argv</code>.</li>
+                <li>Implementing the <code>--multiply</code> flag and integrating it with the existing sum logic.</li>
+                <li>Using <code>npm link</code> effectively to test the script locally.</li>
+            </ul>
+        </div>
+
+        <!-- Improvements -->
+        <div class="improvements">
+            <h2>Improvements</h2>
+            <ul>
+                <li>Improved user experience with detailed usage instructions in the help text.</li>
+            </ul>
+        </div>
     </div>
 
-    <!-- Level 2 -->
-    <div>
-        <h2>Level 2</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Enhance the script to accept a <code>--multiply</code> flag to multiply the numbers instead of adding them.</li>
-            <li>Update the help text to include usage instructions.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong></p>
-        <ul>
-            <li>The <code>--multiply</code> flag works as expected.</li>
-            <li>Usage instructions are clear and correct.</li>
-        </ul>
-    </div>
-    <div>
-        <img src="./level-2/image.png" alt="Level 2 Example">
-    </div>
+    <!-- Footer Section -->
+    <footer>
+        <p><em>This program demonstrates handling command-line arguments, modular programming, and script creation for global execution in Node.js.</em></p>
+    </footer>
 
-    <!-- Level 3 -->
-    <div>
-        <h2>Level 3</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Modularize the program by creating a separate file (<code>mathutils.js</code>) for the <code>add</code> and <code>multiply</code> functions.</li>
-            <li>Take the operation followed by operands as arguments (e.g., <code>command add 1 2</code> or <code>command multiply 3 4</code>).</li>
-            <li>Create a script using the <code>bin</code> part of <code>package.json</code>. Use <code>npm link</code> to test the script.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong></p>
-        <ul>
-            <li>The program uses functions from <code>mathutils.js</code> for calculations.</li>
-            <li>The module is reusable in other scripts.</li>
-            <li>The script can be executed as a global command.</li>
-        </ul>
-    </div>
-    <div>
-        <img src="./level-3/image.png" alt="Level 3 Example">
-    </div>
-
-    <!-- Challenges Faced -->
-    <div class="challenges">
-        <h2>Challenges I Faced</h2>
-        <ul>
-            <li>Understanding how to parse and validate command-line arguments using <code>process.argv</code>.</li>
-            <li>Implementing the <code>--multiply</code> flag and integrating it with the existing sum logic.</li>
-            <li>Using <code>npm link</code> effectively to test the script locally.</li>
-        </ul>
-    </div>
-
-    <!-- Improvements -->
-    <div class="improvements">
-        <h2>Improvements</h2>
-        <ul>
-            <li>Improved user experience with detailed usage instructions in the help text.</li>
-        </ul>
-    </div>
-
-    <p><em>This program demonstrates handling command-line arguments, modular programming, and script creation for global execution in Node.js.</em></p>
 </body>
 </html>

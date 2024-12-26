@@ -3,87 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 6: YAML Configuration with config</title>
+    <title>Exercise 6: YAML Configuration with <code>config</code></title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
             color: #333;
         }
-        h1, h2 {
+        header {
+            padding: 15px 20px;
+            text-align: center;
+        }
+        header a {
+            text-decoration: none;
+            color: white;
+            background-color: indigo;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+        header a:hover {
+            background-color: #5f4b8b;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            color: #2E3A59;
+        }
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
             color: #2E3A59;
         }
         .section {
-            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
         }
         .challenges, .improvements {
             background-color: #f4f4f4;
-            padding: 10px;
-            border-left: 4px solid #17A2B8;
-            margin: 10px 0;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-left: 5px solid #17A2B8;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .challenges h2, .improvements h2 {
+            color: #17A2B8;
+        }
+        .challenges ul, .improvements ul {
+            padding-left: 20px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .section, .challenges, .improvements {
+                width: 90%;
+            }
+            header a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
-    <a style="text-decoration: none; color: white; background-color: indigo  ; padding: 0.5rem; border-radius: 10px;" href="/index.html#prog-basics">Home page</a>
 
-    <h1>Exercise 6: YAML Configuration with <code>config</code></h1>
+<header>
+    <a href="/index.html#prog-basics">Home page</a>
+    <a href="/front-end-programming/ex-1/notes.html">front-end-programming ex-1</a>
+    <a href="../ex-5/notes.html">back</a>
+</header>
 
-    <div class="section">
-        <h2>Level 1</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Install <code>config</code> and create a <code>default.yaml</code> configuration file.</li>
-            <li>Load and use configuration values in the program.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong> The program reads values from the YAML file.</p>
-    </div>
-<div><img src="./level-1/image.png" alt=""></div>
-    <div class="section">
-        <h2>Level 2</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Add multiple environments (e.g., development, production) to the configuration.</li>
-            <li>Load the appropriate configuration based on the environment.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong> The program switches configurations based on the environment.</p>
-    </div>
-    <div><img src="./level-2/image.png" alt=""></div>
+<h1>Exercise 6: YAML Configuration with <code>config</code></h1>
 
-    <div class="section">
-        <h2>Level 3</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Use the configuration to dynamically adjust program behavior (e.g., logging levels).</li>
-            <li>Specify additional commands, functions, and files in the YAML configuration file. Dynamically load and execute functions (e.g., <code>sin</code> and <code>cos</code>) from specified files.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong></p>
-        <ul>
-            <li>Configuration drives program behavior dynamically.</li>
-            <li>New functionality can be added without modifying the old code.</li>
-        </ul>
-    </div>
-    <div><img src="./level-3/image.png" alt=""></div>
+<div class="section">
+    <h2>Level 1</h2>
+    <p><strong>Problem Description:</strong></p>
+    <ul>
+        <li>Install <code>config</code> and create a <code>default.yaml</code> configuration file.</li>
+        <li>Load and use configuration values in the program.</li>
+    </ul>
+    <p><strong>Exit Criteria:</strong> The program reads values from the YAML file.</p>
+</div>
+<div><img src="./level-1/image.png" alt="Level 1 Image"></div>
 
-    <div class="challenges">
-        <h2>Challenges I Faced</h2>
-        <ul>
-            <li>Understanding the structure and syntax of YAML configuration files.</li>
-            <li>Switching between environments seamlessly during development and production.</li>
-            <li>Implementing dynamic function loading based on configuration files.</li>
-        </ul>
-    </div>
+<div class="section">
+    <h2>Level 2</h2>
+    <p><strong>Problem Description:</strong></p>
+    <ul>
+        <li>Add multiple environments (e.g., development, production) to the configuration.</li>
+        <li>Load the appropriate configuration based on the environment.</li>
+    </ul>
+    <p><strong>Exit Criteria:</strong> The program switches configurations based on the environment.</p>
+</div>
+<div><img src="./level-2/image.png" alt="Level 2 Image"></div>
 
-    <div class="improvements">
-        <h2>Improvements</h2>
-        <ul>
-            <li>Structured YAML files for clarity and ease of use.</li>
-            <li>Documented the process of environment switching using the <code>NODE_ENV</code> variable.</li>
-            <li>Enhanced the program's modularity by dynamically loading functions and commands.</li>
-        </ul>
-    </div>
+<div class="section">
+    <h2>Level 3</h2>
+    <p><strong>Problem Description:</strong></p>
+    <ul>
+        <li>Use the configuration to dynamically adjust program behavior (e.g., logging levels).</li>
+        <li>Specify additional commands, functions, and files in the YAML configuration file. Dynamically load and execute functions (e.g., <code>sin</code> and <code>cos</code>) from specified files.</li>
+    </ul>
+    <p><strong>Exit Criteria:</strong></p>
+    <ul>
+        <li>Configuration drives program behavior dynamically.</li>
+        <li>New functionality can be added without modifying the old code.</li>
+    </ul>
+</div>
+<div><img src="./level-3/image.png" alt="Level 3 Image"></div>
+
+<div class="challenges">
+    <h2>Challenges I Faced</h2>
+    <ul>
+        <li>Understanding the structure and syntax of YAML configuration files.</li>
+        <li>Switching between environments seamlessly during development and production.</li>
+        <li>Implementing dynamic function loading based on configuration files.</li>
+    </ul>
+</div>
+
+<div class="improvements">
+    <h2>Improvements</h2>
+    <ul>
+        <li>Structured YAML files for clarity and ease of use.</li>
+        <li>Documented the process of environment switching using the <code>NODE_ENV</code> variable.</li>
+        <li>Enhanced the program's modularity by dynamically loading functions and commands.</li>
+    </ul>
+</div>
+
 </body>
 </html>
-```

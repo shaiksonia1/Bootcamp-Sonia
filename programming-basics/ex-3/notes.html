@@ -7,70 +7,160 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             line-height: 1.6;
-            background-color: #f8f9fa;
+            background-color: #f0f8ff;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        h1, h2 {
-            color: #2E3A59;
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .navbar {
+            margin-top: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            background-color: #6A5ACD;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            margin: 0 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #8A2BE2;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .main-content {
+            width: 80%;
+            max-width: 1200px;
+            padding: 30px;
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
         .section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2E3A59;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        ul {
+            margin: 10px 0 20px 20px;
+            padding-left: 20px;
+            list-style: square;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
         }
         .challenges, .improvements {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-left: 4px solid #17A2B8;
-            margin: 10px 0;
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-left: 6px solid #17A2B8;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .challenges h2, .improvements h2 {
+            color: #4A90E2;
+        }
+        footer {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <a style="text-decoration: none; color: white; background-color: indigo  ; padding: 0.5rem; border-radius: 10px;" href="/index.html#prog-basics">Home page</a>
 
-    <h1>Exercise 3: Logging with Winston</h1>
+    <header>
+        <h1>Exercise 3: Logging with Winston</h1>
+        <div class="navbar">
+            <a href="/index.html#prog-basics">Home Page</a>
+            <a href="../ex-4/notes.html">Programming-Basics Ex-4</a>
+            <a href="../ex-2/notes.html">Back</a>
+        </div>
+    </header>
 
-    <div class="section">
-        <h2>Level 1</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Install winston and create a logger with <code>info</code>, <code>warn</code>, and <code>error</code> levels.</li>
-            <li>Log events like "Program started" and "Operation successful".</li>
-            <li>Division by zero should log as a fatal error.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong> Logs appear in the console with appropriate levels.</p>
-    </div>
-    <div>
-        <img src="./level-1/image.png" alt="">
+    <div class="main-content">
+        <!-- Level 1 -->
+        <div class="section">
+            <h2>Level 1</h2>
+            <p><strong>Problem Description:</strong></p>
+            <ul>
+                <li>Install winston and create a logger with <code>info</code>, <code>warn</code>, and <code>error</code> levels.</li>
+                <li>Log events like "Program started" and "Operation successful".</li>
+                <li>Division by zero should log as a fatal error.</li>
+            </ul>
+            <p><strong>Exit Criteria:</strong> Logs appear in the console with appropriate levels.</p>
+            <img src="./level-1/image.png" alt="Level 1 Example">
+        </div>
+
+        <!-- Level 2 -->
+        <div class="section">
+            <h2>Level 2</h2>
+            <p><strong>Problem Description:</strong></p>
+            <ul>
+                <li>Add file transport to save logs to a file.</li>
+                <li>Include timestamps in the log format for readability.</li>
+            </ul>
+            <p><strong>Exit Criteria:</strong> Logs are saved to a file with clear timestamps.</p>
+            <img src="./level-2/image.png" alt="Level 2 Example">
+        </div>
+
+        <!-- Challenges Faced -->
+        <div class="challenges">
+            <h2>Challenges I Faced</h2>
+            <ul>
+                <li>Configuring multiple transports and log levels in winston.</li>
+                <li>Formatting log outputs with timestamps.</li>
+            </ul>
+        </div>
+
+        <!-- Improvements -->
+        <div class="improvements">
+            <h2>Improvements</h2>
+            <ul>
+                <li>Documenting logging setup for future reference.</li>
+                <li>Adding custom log levels for better categorization.</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>Level 2</h2>
-        <p><strong>Problem Description:</strong></p>
-        <ul>
-            <li>Add file transport to save logs to a file.</li>
-            <li>Include timestamps in the log format for readability.</li>
-        </ul>
-        <p><strong>Exit Criteria:</strong> Logs are saved to a file with clear timestamps.</p>
-    </div>
-    <div>
-        <img src="./level-2/image.png" alt="">
-    </div>
-    <div class="challenges">
-        <h2>Challenges I Faced</h2>
-        <ul>
-            <li>Configuring multiple transports and log levels in winston.</li>
-            <li>Formatting log outputs with timestamps.</li>
-        </ul>
-    </div>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 
-    <div class="improvements">
-        <h2>Improvements</h2>
-        <ul>
-            <li>Documenting logging setup for future reference.</li>
-            <li>Adding custom log levels for better categorization.</li>
-        </ul>
-    </div>
 </body>
 </html>
