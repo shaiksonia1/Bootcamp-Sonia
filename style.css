@@ -31,7 +31,6 @@ h2 {
     color: #430c27;
     text-align: center;
     font-weight: 900;
-    margin-bottom: 20px;
 }
 
 /* Section Styles */
@@ -46,7 +45,7 @@ section {
 h3 {
     font-size: 2rem;
     color: #264653;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /* Styling for the list */
@@ -62,12 +61,12 @@ li {
 
 a {
     text-decoration: none;
-    color: #34091e;
+    color: white;
     transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
 a:hover {
-    color: #994d74; /* Hover color */
+    color: #430c27; /* Hover color */
     padding-left: 10px;
 }
 
@@ -78,10 +77,16 @@ a:focus {
 /* Footer Styling */
 footer {
     background-color: #415a77;
-    padding: 15px 0;
-    font-size: 1.3rem;
+    padding: 16px;
+    font-size: 1rem;
     color: #f3dbea;
 }
+.card {
+    background-color: #415a77;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
