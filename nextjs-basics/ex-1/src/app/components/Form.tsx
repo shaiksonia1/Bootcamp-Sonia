@@ -56,6 +56,10 @@ const Form: React.FC = () => {
         // Display the form until submission
         <form onSubmit={handleSubmit} className="space-y-6 p-8 bg-white bg-opacity-90 rounded-2xl shadow-lg max-w-md w-[90%]">
           <h2 className="text-3xl font-bold text-center text-gray-900">Welcome to the App!</h2>
+          <h3 className="text-l font-bold text-center text-gray-900">         
+                   NextJs-Basics(Ex-1)
+            </h3>
+
           
           <Input
             value={username}
