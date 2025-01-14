@@ -1,4 +1,4 @@
-# Clinical Trial Data Widget Project
+# ASSIGNMENT-3 Clinical Trial Data Widget Project
 
 ## Problem Definition
 Clinical trial data is crucial for researchers, healthcare professionals, and patients looking for treatment options. However, accessing and visualizing this data efficiently is a challenge. ClinicalTrials.gov provides raw data, but a more user-friendly and interactive interface is needed. The goal of this project is to develop a reusable widget that displays clinical trial data from public APIs in an intuitive and informative way.

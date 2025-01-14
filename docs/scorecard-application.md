@@ -1,4 +1,4 @@
-# Scorecard Application for Antibody Analysis
+# ASSIGNMENT-1 : Scorecard Application for Antibody Analysis
 
 ## Objective
 The objective of this project is to build a **Scorecard Application** that assists in the analysis and optimization of antibodies based on their physicochemical properties. The application will fetch data from an API, display a scorecard for each antibody with their corresponding properties and scores, and allow visualization of their **3D molecular structure** to highlight regions requiring optimization.
