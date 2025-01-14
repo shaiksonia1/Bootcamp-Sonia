@@ -1,4 +1,4 @@
-# System Design and Documentation
+# ASSIGNMENT-2: Annotation System Project
 
 ## Overview
 This system includes the following three main tasks:
