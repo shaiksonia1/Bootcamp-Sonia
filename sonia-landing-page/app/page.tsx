@@ -22,6 +22,7 @@ const projects = [
     description: "Product Dashboard with SSG, SSR, and State Management",
     link: "https://sonia-exercise-4.bootcamp.aganitha.ai/"
   }
+  
 ];
 
 export default function Home() {
