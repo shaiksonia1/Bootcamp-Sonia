@@ -8,19 +8,19 @@ const projects = [
     icon: "💻",
     title: "Exercise-1",
     description: "Official Next.js Starter",
-    link: "https://sonia-shaik-ex-1.bootcamp.aganitha.ai/"
+    link: "https://sonia-exercise-1.bootcamp.aganitha.ai/"
   },
   {
     icon: "🚀",
     title: "Exercise-2",
     description: "Kaminari Starter",
-    link: "https://sonia-shaik-ex-2.bootcamp.aganitha.ai/"
+    link: "https://sonia-exercise-2.bootcamp.aganitha.ai/"
   },
   {
     icon: "📊",
     title: "Exercise-4",
     description: "Product Dashboard with SSG, SSR, and State Management",
-    link: "https://sonia-shaik-ex-4.bootcamp.aganitha.ai/"
+    link: "https://sonia-exercise-4.bootcamp.aganitha.ai/"
   }
 ];
 
